@@ -75,5 +75,5 @@
 	$sort            = $bbs_config_data['sort'];
 	$order_by        = $bbs_config_data['order_by'];
 	$bbs_skin        = $bbs_skin_dir.'/'.$bbs_config_data['skin'];
-	$bbs_skin_path   = $bbs_skin_home.'/'.$bbs_config_data['skin'];
+	$bbs_skin_path   = $bbs_skin_url.'/'.$bbs_config_data['skin'];
 ?>

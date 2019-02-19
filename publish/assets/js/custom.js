@@ -25,10 +25,29 @@
 			height : movieHeight
 		});
 	}
+
+	function showQuickTop() {
+		var scTop = jQuery(window).scrollTop();
+		if(scTop != 0) {
+			jQuery('.quick-top').addClass('on');
+		} else {
+			jQuery('.quick-top').removeClass('on');
+		}
+	}
+
 	jQuery(document).ready(function() {
 		youtubeResize();
 		jQuery(window).resize(function() {
 			youtubeResize();
 		});
+		showQuickTop();
+	});
+	// Quick top
+
+	jQuery(document).scroll(function() {
+		showQuickTop()
+	});
+	jQuery(document).on('click', '.quick-top', function() {
+		jQuery( 'html, body' ).animate( { scrollTop : 0 }, 500 );
 	});
 })(jQuery);

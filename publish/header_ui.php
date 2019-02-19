@@ -87,7 +87,7 @@ include_once($site_dir.'/language/'.$currentLang.'.php');
 					<a class="nav-link" href="#"><?php echo($langCode['home']); ?> <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><?php echo($langCode['aboutUs']); ?></a>
+					<a class="nav-link" href="aboutus.php"><?php echo($langCode['aboutUs']); ?></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#"><?php echo($langCode['products']); ?></a>

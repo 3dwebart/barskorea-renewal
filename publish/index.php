@@ -2,7 +2,7 @@
 <div class="">
 	<img src="<?php echo($front_img_url) ?>/main2.png" alt="" class="img-fluid">
 </div>
-<div class="block-wrap dark-bg">
+<div class="block-wrap dark-bg bg-att1">
 	<div class="container">
 		<div class="row p-0">
 			<div class="col-lg-4 p-3">
@@ -25,19 +25,19 @@
 		<h2 class="bar-title"><?php echo $langCode['company']; ?></h2>
 		<p class="content"><?php echo $langCode['companyCon']; ?></p>
 		<div class="row p-0 pt-5 mt-5">
-			<div class="col-4 text-center">
+			<div class="col-lg-4 text-center">
 				<img src="<?php echo($front_img_url); ?>/resized5-300x300.jpg" alt="" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle1']; ?></h3>
 				<p class="content minH-160"><?php echo $langCode['comProductContent1']; ?></p>
 				<a href="#machine" class="btn btn-warning"><?php echo $langCode['clickMe']; ?></a>
 			</div>
-			<div class="col-4 text-center">
+			<div class="col-lg-4 text-center">
 				<img src="<?php echo($front_img_url); ?>/kitchen-300x300.jpg" alt="" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle2']; ?></h3>
 				<p class="content minH-160"><?php echo $langCode['comProductContent2']; ?></p>
 				<a href="#machine" class="btn btn-warning"><?php echo $langCode['clickMe']; ?></a>
 			</div>
-			<div class="col-4 text-center">
+			<div class="col-lg-4 text-center">
 				<img src="<?php echo($front_img_url); ?>/bek-gallery-17-300x300.jpg" alt="" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle3']; ?></h3>
 				<p class="content minH-160"><?php echo $langCode['comProductContent3']; ?></p>
@@ -94,13 +94,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
+				<div class="row-5">
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2 text-xs-center"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -154,13 +154,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-3 col-sm-4 col-6"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
+				<div class="row-5">
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
 				</div>
 			</div>
 		</div>
@@ -288,12 +288,13 @@ $galleryName = "gallery";
 $galleryTable = "bo_table_".$galleryName;
 $galleryFile = $galleryTable.'_files';
 $idArr = array();
+$dataIdArr = array();
 $sql = "SELECT id FROM %s";
 $res = $db -> query($sql, array($galleryTable));
 for ($i=0; $row = $db -> fetch_assoc(); $i++) { 
 	$idArr[$i] = $row['id'];
 }
-$sql = "SELECT document_id, dir, file_name, origin_name FROM %s LIMIT 0, 8";
+$sql = "SELECT id, document_id, dir, file_name, origin_name FROM %s LIMIT 0, 8";
 $res = $db -> query($sql, array($galleryFile));
 ?>
 <div class="features-wrap block-wrap orange-bg">
@@ -307,10 +308,11 @@ $res = $db -> query($sql, array($galleryFile));
 						for($i = 0; $i < count($idArr); $i++) {
 							if ($row['document_id'] == $idArr[$i]) {
 								$file = $site_url.$row['dir'].$row['file_name'];
+								$dataIdArr[] = $row['id'];
 				?>
 				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#lightbox" data-toggle="modal" data-slide-to="0">
-						<img src="<?php echo($file); ?>" alt="<?php echo($row['file_name']); ?>" class="img-fluid" />
+					<a href="#lightbox" data-id="<?php echo($row['id']); ?>" data-toggle="modal" data-target="#galleryModal"">
+						<img src="<?php echo($file); ?>" alt="<?php echo($row['origin_name']); ?>" class="img-fluid" />
 					</a>
 				</div>
 				<?php
@@ -322,13 +324,87 @@ $res = $db -> query($sql, array($galleryFile));
 		</div>
 	</div>
 </div>
+<!-- The Modal -->
+<div class="modal" id="galleryModal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h4 class="modal-title"><?php echo $langCode['OurMenu']; ?></h4>
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<?php
+			$sql = "SELECT id, document_id, dir, file_name, origin_name FROM %s LIMIT 0, 8";
+			$res = $db -> query($sql, array($galleryFile));
+			?>
+
+			<!-- Modal body -->
+			<div class="modal-body">
+				<div id="demo" class="carousel slide" data-ride="carousel">
+					 <!-- Indicators -->
+					<ul class="carousel-indicators">
+						<?php
+							for($i = 0; $i < count($dataIdArr); $i++) {
+    							echo '<li data-target="#demo" data-slide-to="'.$i.'" data-id="'.$dataIdArr[$i].'"></li>';
+							}
+						?>
+					</ul>
+					<div class="carousel-inner">
+					<?php
+						while ($row = $db -> fetch_assoc()) {
+							for($i = 0; $i < count($idArr); $i++) {
+								if ($row['document_id'] == $idArr[$i]) {
+									$file = $site_url.$row['dir'].$row['file_name'];
+					?>
+						<div class="carousel-item" data-id="<?php echo($dataIdArr[$i]); ?>">
+							<img src="<?php echo($file); ?>" alt="<?php echo($row['origin_name']); ?>" class="img-fluid" />
+						</div>
+					<?php
+								}
+							}
+						}
+					?>
+					</div>
+					<a class="carousel-control-prev" href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+				<button type="button" class="btn btn-mint" data-dismiss="modal">Close</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+
 <!-- 임시 스크립트 { -->
-	<script>
-		$('a[href="#lightbox"]').on('click', function() {
-			alert('신규 Database  준비중 ...');
-			return false;
+<script>
+	jQuery('a[href="#lightbox"]').on('click', function() {
+		var id = jQuery(this).data('id');
+		jQuery('#galleryModal').on('shown.bs.modal', function () {
+			jQuery('.carousel-indicators li').each(function() {
+				if(jQuery(this).data('id') == id) {
+					jQuery(this).siblings().removeClass('active');
+					jQuery(this).addClass('active');
+				}
+			});
+			jQuery('.carousel-inner .carousel-item').each(function() {
+				if(jQuery(this).data('id') == id) {
+					jQuery(this).siblings().removeClass('active');
+					jQuery(this).addClass('active');
+				}
+			});
 		});
-	</script>
+		//return false;
+	});
+</script>
 <!-- } 임시 스크립트 -->
 <div class="features-wrap block-wrap orange-bg">
 	<div class="container">
@@ -566,9 +642,4 @@ if($db -> num_rows() == 0) {
 	</div>
 </div>
 <!-- END :: Partnership logos  -->
-<?php echo($_COOKIE['language']); ?>
-<br />
-<?php echo($langCode['code']); ?>
-<br />
-<?php echo($langCode['code2']); ?>
 <?php include_once('footer_ui.php'); ?>

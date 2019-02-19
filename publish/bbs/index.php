@@ -11,7 +11,6 @@
 		</div>
 	</div>
 </script>
-<div class="container">
 <!--
 <div class="page-header">
 	<h1><?php echo($bbs_config_data['title']); ?></h1>
@@ -39,4 +38,3 @@
 	}
 */
 ?>
-</div>

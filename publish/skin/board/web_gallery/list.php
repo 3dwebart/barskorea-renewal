@@ -90,39 +90,7 @@
 	// 전체 글 목록 수
 	$count = $db -> num_rows();
 ?>
-<style>
-	.web-gallery colgroup col:nth-child(1) {
-		width: 5%;
-	}
-
-	.web-gallery colgroup col:nth-child(2) {
-		width: 10%;
-	}
-
-	.web-gallery colgroup col:nth-child(4) {
-		width: 10%;
-	}
-
-	.web-gallery colgroup col:nth-child(5) {
-		width: 10%;
-	}
-
-	.web-gallery colgroup col:nth-child(6) {
-		width: 10%;
-	}
-
-	.web-gallery thead tr {
-		background-color: #d0e67c;
-	}	
-
-	.web-gallery tbody tr:nth-child(even) {
-		background-color: #EFEFEF;
-	}
-
-	.web-gallery tbody tr td {
-		vertical-align: middle;
-	}
-</style>
+<link rel="stylesheet" href="<?php echo $bbs_skin_path; ?>/style.css">
 <script>
 	$(function() {
 		$('.html-doctype').hide();
@@ -149,6 +117,7 @@
 		});
 	});
 </script>
+<div class="container">
 <!-- 글 목록 시작 -->
 <table class='table web-gallery'>
 	<colgroup>
@@ -296,7 +265,7 @@
 		<div class="input-group" style="width: 200px;">
 			<input type="text" name='search' class="form-control list-search-input" value="<?php echo($search); ?>" />
 			<span class="input-group-btn">
-				<button class="btn btn-success list-search-btn" type="submit">
+				<button class="btn btn-mint list-search-btn" type="submit">
 					<i class='fa fa-search'></i>
 				</button>
 			</span>
@@ -306,7 +275,7 @@
 		<?php if($session_user_level > $write_level) { ?>
 		&nbsp;
 		<?php } else { ?>
-		<a href="write.php?<?php if(empty($bo_name)) { ?>bbs_id=<?php echo($bbs_id); } else { ?>bo_name=<?php echo($bo_name); } ?>" class='btn btn-primary'>글 쓰기</a>
+		<a href="write.php?<?php if(empty($bo_name)) { ?>bbs_id=<?php echo($bbs_id); } else { ?>bo_name=<?php echo($bo_name); } ?>" class='btn btn-mint'>글 쓰기</a>
 		<?php } ?>
 	</div>
 </div>
@@ -316,11 +285,17 @@
 	<ul class="pagination">
 		<!-- 이전 그룹 -->
 <?php if ($prev_page > 0) { ?>
-		<li><a href="index.php?<?php if(empty($bo_name)) { ?>bbs_id=<?php echo($bbs_id); } else { ?>bo_name=<?php echo($bo_name); } ?>&page=<?php echo($prev_page); ?>&search=<?php echo($search); ?>">
-				<span aria-hidden="true">&laquo;</span></a></li>
+		<li>
+			<a href="index.php?<?php if(empty($bo_name)) { ?>bbs_id=<?php echo($bbs_id); } else { ?>bo_name=<?php echo($bo_name); } ?>&page=<?php echo($prev_page); ?>&search=<?php echo($search); ?>">
+				<span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+			</a>
+		</li>
 <?php } else { ?>
-		<li class='disabled'><a href="#">
-				<span aria-hidden="true">&laquo;</span></a></li>
+		<li class='disabled'>
+			<a href="#">
+				<span aria-hidden="true"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+			</a>
+		</li>
 <?php } ?>
 
 		<!-- 페이지 번호 -->
@@ -332,23 +307,27 @@
 <?php
 		} else {
 ?>
-		<li><a href="index.php?<?php if(empty($bo_name)) { ?>bbs_id=<?php echo($bbs_id); } else { ?>bo_name=<?php echo($bo_name); } ?>&page=<?php echo($i); ?>&search=<?php echo($search); ?>"><?php echo($i); ?></a></li>
+		<li>
+			<a href="index.php?<?php if(empty($bo_name)) { ?>bbs_id=<?php echo($bbs_id); } else { ?>bo_name=<?php echo($bo_name); } ?>&page=<?php echo($i); ?>&search=<?php echo($search); ?>"><?php echo($i); ?></a>
+		</li>
 <?php
 		}
 	}
 ?>
 		<!-- 다음 그룹 -->
 <?php if ($next_page > 0) { ?>
-		<li><a href="index.php?<?php if(empty($bo_name)) { ?>bbs_id=<?php echo($bbs_id); } else { ?>bo_name=<?php echo($bo_name); } ?>&page=<?php echo($next_page); ?>&search=<?php echo($search); ?>">
-				<span aria-hidden="true">&raquo;</span>
+		<li>
+			<a href="index.php?<?php if(empty($bo_name)) { ?>bbs_id=<?php echo($bbs_id); } else { ?>bo_name=<?php echo($bo_name); } ?>&page=<?php echo($next_page); ?>&search=<?php echo($search); ?>">
+				<span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
 			</a>
 		</li>
 <?php } else { ?>
 		<li class='disabled'>
 			<a href="#">
-				<span aria-hidden="true">&raquo;</span>
+				<span aria-hidden="true"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
 			</a>
 		</li>
 <?php } ?>
 	</ul>
 </nav>
+</div>
