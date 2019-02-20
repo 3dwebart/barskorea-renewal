@@ -334,8 +334,11 @@
 
 		//높이제어(세로기준으로 가로를 맞춤)
 		if(_stageHeight < _imageHeight || _stageHeight > _imageHeight) { //플랫폼이 이미지의세로보다 작거나 크면
-			_imageHeight = _stageHeight; //이미지의 세로를 플랫폼으로 맞추고
-			_imageWidth = _stageHeight * IMAGE_WIDTH/IMAGE_HEIGHT; //세로에따른 비율계산
+			//_imageHeight = _stageHeight; //이미지의 세로를 플랫폼으로 맞추고
+			//_imageWidth = _stageHeight * IMAGE_WIDTH/IMAGE_HEIGHT; //세로에따른 비율계산
+
+			_imageWidth = _stageWidth; //이미지의 가로를 플랫폼으로 맞추고
+			_imageHeight = _stageWidth * IMAGE_HEIGHT/IMAGE_WIDTH; //가로에따른 비율계산
 		}
 
 		//가로제어(가로기준으로 세로를 맞춤)
