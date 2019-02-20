@@ -84,16 +84,16 @@ include_once($site_dir.'/language/'.$currentLang.'.php');
 		<div class="collapse navbar-collapse" id="barskoreaNav">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#"><?php echo($langCode['home']); ?> <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="<?php echo $site_url ?>"><?php echo($langCode['home']); ?> <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="aboutus.php"><?php echo($langCode['aboutUs']); ?></a>
+					<a class="nav-link" href="<?php echo $site_url ?>/aboutus.php"><?php echo($langCode['aboutUs']); ?></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><?php echo($langCode['products']); ?></a>
+					<a class="nav-link" href="<?php echo $site_url ?>/product.php"><?php echo($langCode['products']); ?></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><?php echo($langCode['bkKoreaFamily']); ?></a>
+					<a class="nav-link" href="<?php echo $site_url ?>/bkkorea.php"><?php echo($langCode['bkKoreaFamily']); ?></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#"><?php echo($langCode['partnership']); ?></a>

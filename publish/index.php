@@ -213,7 +213,7 @@
 				<p class="pt-1 pb-1"><?php echo $langCode['FeaturesContent6']; ?></p>
 			</div>
 		</div>
-		<div class="row-10">
+		<div class="row-10 mt-5">
 			<div class="col-lg-3">
 				<img src="<?php echo($front_img_url) ?>/machine1.jpg" alt="" class="img-fluid rounded-1rem">
 			</div>
@@ -409,7 +409,9 @@ $res = $db -> query($sql, array($galleryFile));
 <div class="features-wrap block-wrap orange-bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6">Maps</div>
+			<div class="col-lg-6">
+				<img src="<?php echo $front_img_url ?>/map.png" alt="" class="img-fluid" />
+			</div>
 			<div class="col-lg-6">
 				<h2 class="bar-title text-center"><?php echo $langCode['Features']; ?></h2>
 				<form action="">
