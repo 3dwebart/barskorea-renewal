@@ -360,7 +360,7 @@ $res = $db -> query($sql, array($galleryFile));
 									$file = $site_url.$row['dir'].$row['file_name'];
 					?>
 						<div class="carousel-item" data-id="<?php echo($dataIdArr[$i]); ?>">
-							<img src="<?php echo($file); ?>" alt="<?php echo($row['origin_name']); ?>" class="img-fluid" />
+							<img src="<?php echo($file); ?>" alt="<?php echo($row['origin_name']); ?>" class="img-fluid m-w-100" />
 						</div>
 					<?php
 								}

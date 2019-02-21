@@ -20,16 +20,16 @@
 					</ul>
 					<div class="carousel-inner">
 						<div class="carousel-item" data-id="1">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/design-7-560x560.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/design-7-560x560.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="2">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/design-9-560x560.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/design-9-560x560.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="3">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/design-1-560x560.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/design-1-560x560.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="4">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/design-8-560x560.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/design-8-560x560.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#PhotoAndDesign" data-slide="prev">
@@ -72,16 +72,16 @@
 					</ul>
 					<div class="carousel-inner">
 						<div class="carousel-item" data-id="1">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/bek-gallery-13.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/bek-gallery-13.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="2">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/bek-gallery-1.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/bek-gallery-1.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="3">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/bek-gallery-6.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/bek-gallery-6.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="4">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/bek-gallery-3.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/bek-gallery-3.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#PhotoAndDesign" data-slide="prev">
@@ -124,16 +124,16 @@
 					</ul>
 					<div class="carousel-inner">
 						<div class="carousel-item" data-id="1">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/training-2.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/training-2.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="2">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/training-3.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/training-3.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="3">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/training-5.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/training-5.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="4">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/training-7.jpg" alt="" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/training-7.jpg" alt="" class="img-fluid m-w-100" />
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#PhotoAndDesign" data-slide="prev">
@@ -180,28 +180,28 @@
 					</ul>
 					<div class="carousel-inner">
 						<div class="carousel-item" data-id="1">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bing-slider-10.jpg" alt="slide 1" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bing-slider-10.jpg" alt="slide 1" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="2">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bing-slider-11.jpg" alt="slide 2" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bing-slider-11.jpg" alt="slide 2" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="3">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/3-560560-1.jpg" alt="slide 3" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/3-560560-1.jpg" alt="slide 3" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="4">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bek-gallery-19-1.jpg" alt="slide 4" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bek-gallery-19-1.jpg" alt="slide 4" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="5">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/grid10.jpg" alt="slide 5" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/grid10.jpg" alt="slide 5" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="6">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/grid12.jpg" alt="slide 6" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/grid12.jpg" alt="slide 6" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="7">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/image-3.jpg" alt="slide 7" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/image-3.jpg" alt="slide 7" class="img-fluid m-w-100" />
 						</div>
 						<div class="carousel-item" data-id="8">
-							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/menu-1-big.jpg" alt="slide 8" class="img-fluid" />
+							<img src="<?php echo $front_img_url; ?>/bkkorea/slide/menu-1-big.jpg" alt="slide 8" class="img-fluid m-w-100" />
 						</div>
 					</div>
 					<a class="carousel-control-prev" href="#PhotoAndDesign" data-slide="prev">

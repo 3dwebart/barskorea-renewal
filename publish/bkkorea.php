@@ -6,8 +6,8 @@
 	<div class="header-wrap">
 		<div class="text text-center">
 			<img src="<?php echo $front_img_url; ?>/bkkorea/bek_logo-768x253.png" alt="bk-korea logo" class="img-fluid" />
-			<h2><?php echo $langCode['YourOneStopSolution']; ?></h2>
-			<span><?php echo $langCode['YourOneStopSolutionCon']; ?></span>
+			<h2 class="d-none d-sm-none d-md-block"><?php echo $langCode['YourOneStopSolution']; ?></h2>
+			<span class="d-none d-sm-none d-md-none d-lg-block"><?php echo $langCode['YourOneStopSolutionCon']; ?></span>
 		</div>
 	</div>
 </div>
@@ -289,43 +289,43 @@
 		</div>
 	</div>
 </div>
-<div class="row-3 py-1 m-0">
-	<div class="col-lg-3-half">
+<div class="row-3 m-0">
+	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="1" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
 			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bing-slider-10.jpg" alt="slide 1" class="img-fluid" />
 		</a>
 	</div>
-	<div class="col-lg-3-half">
+	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="2" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
 			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bing-slider-11.jpg" alt="slide 2" class="img-fluid" />
 		</a>
 	</div>
-	<div class="col-lg-3-half">
+	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="3" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
 			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/3-560560-1.jpg" alt="slide 3" class="img-fluid" />
 		</a>
 	</div>
-	<div class="col-lg-3-half">
+	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="4" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
 			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bek-gallery-19-1.jpg" alt="slide 4" class="img-fluid" />
 		</a>
 	</div>
-	<div class="col-lg-3-half">
+	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="5" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
 			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/grid10.jpg" alt="slide 5" class="img-fluid" />
 		</a>
 	</div>
-	<div class="col-lg-3-half">
+	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="6" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
 			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/grid12.jpg" alt="slide 6" class="img-fluid" />
 		</a>
 	</div>
-	<div class="col-lg-3-half">
+	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="7" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
 			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/image-3.jpg" alt="slide 7" class="img-fluid" />
 		</a>
 	</div>
-	<div class="col-lg-3-half">
+	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="8" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
 			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/menu-1-big.jpg" alt="slide 8" class="img-fluid" />
 		</a>

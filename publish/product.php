@@ -6,7 +6,7 @@
 	<div class="header-wrap">
 		<div class="text text-center">
 			<h2><?php echo $langCode['BKKoreaPowders']; ?></h2>
-			<span><?php echo $langCode['BKKoreaPowdersCon']; ?></span>
+			<span class="d-none d-sm-none d-md-block"><?php echo $langCode['BKKoreaPowdersCon']; ?></span>
 		</div>
 	</div>
 </div>
