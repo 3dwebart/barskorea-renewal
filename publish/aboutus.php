@@ -1,4 +1,7 @@
-<?php include_once('header_ui.php'); ?>
+<?php
+	include_once('header_ui.php');
+	$pageNo = 1;
+?>
 <div class="block-wrap light-bg">
 	<div class="container">
 		<img src="<?php echo($front_img_url) ?>/slider_8-3.jpg" alt="">

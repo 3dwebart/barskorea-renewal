@@ -19,7 +19,7 @@
 				</p>
 			</div>
 			<div class="col-lg-4 pl-5 pr-5">
-				<a href="#" class="btn btn-info">
+				<a href="https://www.instagram.com/barskorea.official/" class="btn btn-info" target="_blank">
 					<i class="fa fa-instagram"></i>
 					<?php echo($langCode['FollowOnInstagram']); ?>
 				</a>
@@ -36,5 +36,16 @@
 <a href="#" class="quick-top">
 	<i class="fa fa-caret-up" aria-hidden="true"></i>
 </a>
+<script>
+(function($) {
+	jQuery(document).ready(function() {
+		var pageNo = '<?php echo $pageNo; ?>';
+		jQuery('.navbar-nav li').eq(pageNo).siblings().removeClass('active');
+		jQuery('.navbar-nav li').eq(pageNo).addClass('active');
+		console.log('pageNo = ' + pageNo);
+		console.log('active html = ' + jQuery('.navbar-nav li').eq(pageNo).html());
+	});
+})(jQuery);
+</script>
 </body>
 </html>

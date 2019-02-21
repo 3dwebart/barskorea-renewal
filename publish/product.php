@@ -1,4 +1,7 @@
-<?php include_once('header_ui.php'); ?>
+<?php
+	include_once('header_ui.php');
+	$pageNo = 2;
+?>
 <div id="headerImage" class="product-header">
 	<div class="header-wrap">
 		<div class="text text-center">
@@ -348,7 +351,6 @@
 		}
 		jQuery('#headerImage').width(_imageWidth);
 		jQuery('#headerImage').height(_imageHeight);
-		console.log(_imageHeight);
 	}
 	jQuery(document).ready(function() {
 		headerImageResize();

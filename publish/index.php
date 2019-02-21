@@ -1,4 +1,7 @@
-<?php include_once('header_ui.php'); ?>
+<?php
+	include_once('header_ui.php');
+	$pageNo = 0;
+?>
 <div class="">
 	<img src="<?php echo($front_img_url) ?>/main2.png" alt="" class="img-fluid">
 </div>
@@ -311,7 +314,7 @@ $res = $db -> query($sql, array($galleryFile));
 								$dataIdArr[] = $row['id'];
 				?>
 				<div class="col-lg-3 col-md-4 col-6">
-					<a href="#lightbox" data-id="<?php echo($row['id']); ?>" data-toggle="modal" data-target="#galleryModal"">
+					<a href="#lightbox" data-id="<?php echo($row['id']); ?>" data-toggle="modal" data-target="#galleryModal">
 						<img src="<?php echo($file); ?>" alt="<?php echo($row['origin_name']); ?>" class="img-fluid" />
 					</a>
 				</div>
@@ -328,7 +331,6 @@ $res = $db -> query($sql, array($galleryFile));
 <div class="modal" id="galleryModal">
 	<div class="modal-dialog">
 		<div class="modal-content">
-
 			<!-- Modal Header -->
 			<div class="modal-header">
 				<h4 class="modal-title"><?php echo $langCode['OurMenu']; ?></h4>
@@ -388,7 +390,8 @@ $res = $db -> query($sql, array($galleryFile));
 <script>
 	jQuery('a[href="#lightbox"]').on('click', function() {
 		var id = jQuery(this).data('id');
-		jQuery('#galleryModal').on('shown.bs.modal', function () {
+		var targetID = jQuery(this).data('target');
+		jQuery(targetID).on('shown.bs.modal', function () {
 			jQuery('.carousel-indicators li').each(function() {
 				if(jQuery(this).data('id') == id) {
 					jQuery(this).siblings().removeClass('active');
@@ -580,64 +583,61 @@ if($db -> num_rows() == 0) {
 <div class="features-wrap block-wrap light-bg pb-5">
 	<div class="container">
 		<div class="row-5">
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/cafethesnow-1.jpg" alt="cafe he show" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/chowking-1.jpg" alt="chowking" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
-				<img src="<?php echo($front_img_url); ?>/logo/coolcafe.jpg" alt="coolcafe" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/ediya-1.jpg" alt="EDIYA COFFEE" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/hollys-1.jpg" alt="hollys" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/maancoffee-1.jpg" alt="maancoffee" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/magicsnow-1.jpg" alt="magicsnow" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/naza-1.jpg" alt="naza" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/pb-1.jpg" alt="paris baguette" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/rottibun-1.jpg" alt="rottibun" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/seolhwa-1.jpg" alt="seolhwa" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/sulmida.jpg" alt="sulmida" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/sulnbeans-1.jpg" alt="sulnbeans" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/theseol-1.jpg" alt="the seol" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/touslesjours-1.jpg" alt="tous les jours" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/unnamed-1.jpg" alt="옥루몽" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/victor-1.jpg" alt="victor" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/vivaldi-1.jpg" alt="vivaldi park" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/widcafe-1.jpg" alt="widcafe" class="img-fluid" />
 			</div>
-			<div class="col-lg-3-half">
+			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/zoo-1.jpg" alt="zoo coffee" class="img-fluid" />
 			</div>
 		</div>

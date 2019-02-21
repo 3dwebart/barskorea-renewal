@@ -1,13 +1,25 @@
-/********** END :: Common **********/
+********* END :: Common **********/
 a { color: rgba(86,189,181,1); }
 a:hover { color: rgba(86,189,181,1); }
 .font-d75rem { font-size: 0.75rem !important; }
+.font-2rem { font-size: 2rem !important; }
+.font-5rem { font-size: 5rem !important; }
 .font-7rem { font-size: 7rem !important; }
 .align-item-center { align-items: center; }
 .underline { text-decoration: underline; }
-#headerImage { background-size: 100%; background-repeat: no-repeat; }
+#headerImage { background-size: cover; background-repeat: no-repeat; }
 #headerImage.product-header { background-image: url('../img/product/header2.jpg'); }
 #headerImage.bkkorea-header { background-image: url('../img/bkkorea/header.jpg'); }
+#headerImage.partnership-header { background-image: url('../img/partnership/header2.jpg'); }
+.partnership-wrap,.partnership-wrap .row { height: 100%; }
+#headerImage.contact-header { background-image: url('../img/contact/header3.jpg'); }
+.contact-us { position: relative; }
+.contact-us:before { content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('../img/contact/header3.jpg'); background-size: cover; background-repeat: no-repeat; opacity: .3; }
+.bg-w { background-color: rgba(255,255,255,1); }
+.contact-qr img { max-width: 150px; }
+#headerImage.contact-header .contact-wrap { height: 100%; background-color: rgba(255,255,255,.7); }
+.partnership-wrap,.partnership-wrap
+.partnership-header-wrap { height: 100%; background-color: rgba(255,255,255,.7); }
 #headerImage .header-wrap { position: relative; width: 100%; height: 100%; background-color: rgba(255,255,255,.5); align-items: center; justify-content: center; }
 #headerImage .header-wrap > .text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 #headerImage .header-wrap > .text h2 { font-size: 2rem; color: #333; }
@@ -134,6 +146,10 @@ a:hover { color: rgba(86,189,181,1); }
 .navbar-brand img { max-height: 40px; }
 /* } END :: navigation style */
 .rounded-1rem { border-radius: 1rem !important; }
+/* BIGIN :: modal */
+.modal-btn { display: block; width: 100%; height: 100%; overflow: hidden; }
+.modal-btn img { transform: scale(1); transition: all .5s ease; }
+.modal-btn:hover img { transform: scale(1.2); transition: all .5s ease; }
 /********** END :: Common **********/
 .bg-att1 {
 	background-attachment: fixed;
@@ -179,3 +195,7 @@ a[data-vimeo] img { display: block; }
 }
 .copyright { background-color: rgba(0,0,0,1); color: rgba(255,255,255,.8); padding: 5px 0; }
 /********** END :: Footer **********/
+
+/********** BIGIN :: bkkorea.php style **********/
+.logo-box { background-color: #efefef; }
+/********** END :: bkkorea.php style *********

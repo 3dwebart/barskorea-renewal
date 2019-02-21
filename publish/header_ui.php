@@ -96,10 +96,10 @@ include_once($site_dir.'/language/'.$currentLang.'.php');
 					<a class="nav-link" href="<?php echo $site_url ?>/bkkorea.php"><?php echo($langCode['bkKoreaFamily']); ?></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><?php echo($langCode['partnership']); ?></a>
+					<a class="nav-link" href="<?php echo $site_url ?>/partnership.php"><?php echo($langCode['partnership']); ?></a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#"><?php echo($langCode['contact']); ?></a>
+					<a class="nav-link" href="<?php echo $site_url ?>/contact.php"><?php echo($langCode['contact']); ?></a>
 				</li>
 			</ul>
 		</div>
