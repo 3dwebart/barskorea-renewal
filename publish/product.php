@@ -13,11 +13,11 @@
 <div class="block-wrap light-bg">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 d-flex flex-direction-column justify-content-center align-item-center">
+			<div class="col-lg-6 d-flex flex-direction-column justify-content-center align-item-center order-2 order-lg-1">
 				<h2 class="title"><?php echo $langCode['BKKoreaPowders']; ?></h2>
 				<p class="content"><?php echo $langCode['BKKoreaPowdersCon']; ?></p>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 order-1 order-lg-2">
 				<img src="<?php echo $front_img_url; ?>/product/bingsu.jpg" alt="BK Korea Powders" class="img-fluid" />
 			</div>
 		</div>

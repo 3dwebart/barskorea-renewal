@@ -7,7 +7,7 @@
 		<div class="row m-0">
 			<div class="col-lg-6 px-5 partnership-header-wrap d-flex flex-direction-column justify-content-center">
 				<h2 class="title font-5rem"><?php echo $langCode['YourPartnerAroundTheWorld']; ?></h2>
-				<p class="content font-2rem">
+				<p class="content font-2rem m-font-3rem">
 					<?php echo $langCode['YourPartnerAroundTheWorldCon']; ?>
 				</p>
 			</div>
@@ -43,30 +43,30 @@
 </div>
 
 <div class="block-wrap light-bg">
-	<div class="container">
+	<div class="container m-container px-5">
 		<div class="row text-center">
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/Australia.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaAustralia']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaAustraliaCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/Malaysia.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaMalaysia']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaMalaysiaCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/dubai_new.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaDubai']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaDubaiCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/thailand.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaThailand']; ?></h2>
@@ -82,84 +82,84 @@
 				</div>
 			</div>
 			-->
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/philippines.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaPhilippines']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaPhilippinesCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/cambodia.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaCambodia']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaCambodiaCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/canada.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaCanada']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaCanadaCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/china.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaChina']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaChinaCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/hawaii.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaHawaii']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaHawaiiCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/iran.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaIran']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaIranCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/myanmar.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaMyanmar']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaMyanmarCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/saudi.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaSaudiArabia']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaSaudiArabiaCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/turkey.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaTurkey']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaTurkeyCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/oman.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaOman']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaOmanCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/ireland.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaIreland']; ?></h2>
 					<p class="content"><?php echo $langCode['BarskoreaIrelandCity']; ?></p>
 				</div>
 			</div>
-			<div class="col-3 py-3">
+			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">
 					<img src="<?php echo $front_img_url; ?>/partnership/israel.png" alt="" class="img-fluid" />
 					<h2 class="title subject title subject pt-3 pb-0"><?php echo $langCode['BarskoreaIsrael']; ?></h2>

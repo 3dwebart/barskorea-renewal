@@ -32,19 +32,19 @@
 				<img src="<?php echo($front_img_url); ?>/resized5-300x300.jpg" alt="" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle1']; ?></h3>
 				<p class="content minH-160"><?php echo $langCode['comProductContent1']; ?></p>
-				<a href="#machine" class="btn btn-warning"><?php echo $langCode['clickMe']; ?></a>
+				<a href="#machine" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
 			</div>
 			<div class="col-lg-4 text-center">
 				<img src="<?php echo($front_img_url); ?>/kitchen-300x300.jpg" alt="" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle2']; ?></h3>
 				<p class="content minH-160"><?php echo $langCode['comProductContent2']; ?></p>
-				<a href="#machine" class="btn btn-warning"><?php echo $langCode['clickMe']; ?></a>
+				<a href="#machine" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
 			</div>
 			<div class="col-lg-4 text-center">
 				<img src="<?php echo($front_img_url); ?>/bek-gallery-17-300x300.jpg" alt="" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle3']; ?></h3>
 				<p class="content minH-160"><?php echo $langCode['comProductContent3']; ?></p>
-				<a href="#machine" class="btn btn-warning"><?php echo $langCode['clickMe']; ?></a>
+				<a href="#machine" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
 			</div>
 		</div>
 	</div>
@@ -421,47 +421,47 @@ $res = $db -> query($sql, array($galleryFile));
 					<div class="row form-group">
 						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_name']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control">
+							<input type="text" class="form-control m-form-control">
 						</div>
 					</div>
 					<div class="row form-group">
 						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_company']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control">
+							<input type="text" class="form-control m-form-control">
 						</div>
 					</div>
 					<div class="row form-group">
 						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_email']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control">
+							<input type="text" class="form-control m-form-control">
 						</div>
 					</div>
 					<div class="row form-group">
 						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_phone']; ?>:</label>
 						<div class="col-lg-9">
 							<div class="input-group">
-								<input type="text" class="form-control col-3">
+								<input type="text" class="form-control m-form-control col-3">
 								<span class="input-group-prepend col-form-label pl-2 pr-2"> - </span>
-								<input type="text" class="form-control">
+								<input type="text" class="form-control m-form-control">
 							</div>
 						</div>
 					</div>
 					<div class="row form-group">
 						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_country']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control">
+							<input type="text" class="form-control m-form-control">
 						</div>
 					</div>
 					<div class="row form-group">
 						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_textarea']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control">
+							<input type="text" class="form-control m-form-control">
 						</div>
 					</div>
 					<div class="row form-group">
 						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_wordVerification']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control">
+							<input type="text" class="form-control m-form-control">
 						</div>
 					</div>
 					<div class="row form-group">

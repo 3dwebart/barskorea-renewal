@@ -238,7 +238,8 @@ $langCode = array(
 	'BarskoreaIrelandCity' => 'Dublín, Irlanda',
 	'BarskoreaIsrael' => 'BARSKOREA ISRAEL',
 	'BarskoreaIsraelCity' => 'Jerusalén, Israe',
-	'' => '',
+	//contact us
+	'contactUs' => 'CONTÁCTENOS!',
 	'' => '',
 	'' => '',
 );
