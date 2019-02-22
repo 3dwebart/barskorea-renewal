@@ -4,12 +4,12 @@
 ?>
 <div class="block-wrap light-bg">
 	<div class="container">
-		<img src="<?php echo($front_img_url) ?>/slider_8-3.jpg" alt="" class="img-fluid" />
+		<img src="<?php echo($front_img_url) ?>/slider_8-3.jpg" alt="top image" class="img-fluid" />
 	</div>
 </div>
 <div class="block-wrap dark-bg">
 	<div class="container">
-		<h2 class="bar-title">Our Achievements</h2>
+		<h2 class="bar-title"><?php echo $langCode['OurAchievements']; ?></h2>
 		<div class="row p-0">
 			<div class="col-lg-4 p-3">
 				<p class="content text-center font-7rem">20</p>
@@ -30,7 +30,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 text-center">
-				<img src="<?php echo($front_img_url) ?>/boss.jpg" alt="boss">
+				<img src="<?php echo($front_img_url) ?>/boss.jpg" alt="boss" class="img-fluid">
 			</div>
 			<div class="col-lg-6">
 				<h2 class="title"><?php echo $langCode['GreetingFromCEO']; ?></h2>

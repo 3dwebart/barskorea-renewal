@@ -6,8 +6,8 @@
 	<div class="partnership-wrap">
 		<div class="row m-0">
 			<div class="col-lg-6 px-5 partnership-header-wrap d-flex flex-direction-column justify-content-center">
-				<h2 class="title font-5rem"><?php echo $langCode['YourPartnerAroundTheWorld']; ?></h2>
-				<p class="content font-2rem m-font-3rem">
+				<h2 class="title font-5rem m-font-2rem"><?php echo $langCode['YourPartnerAroundTheWorld']; ?></h2>
+				<p class="content font-2rem d-none d-sm-none d-md-block d-lg-block d-xl-block">
 					<?php echo $langCode['YourPartnerAroundTheWorldCon']; ?>
 				</p>
 			</div>

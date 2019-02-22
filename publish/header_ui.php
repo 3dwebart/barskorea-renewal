@@ -48,6 +48,7 @@ include_once($site_dir.'/language/'.$currentLang.'.php');
 <?php } ?>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
 <title>Document</title>
 <link rel="stylesheet" href="<?php echo($front_css_url); ?>/bootstrap-reboot.min.css">
 <link rel="stylesheet" href="<?php echo($front_css_url); ?>/bootstrap-grid.min.css">
@@ -73,7 +74,7 @@ include_once($site_dir.'/language/'.$currentLang.'.php');
 	</div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-	<div class="container m-container px-5">
+	<div class="container m-container">
 		<a class="navbar-brand" href="<?php echo($site_url); ?>">
 			<img src="<?php echo($front_img_url); ?>/barskorea-logo.png" alt="logo" />
 		</a>

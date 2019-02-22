@@ -1,5 +1,5 @@
 <div id="footer" class="features-wrap block-wrap dark-bg pt-5 pb-5">
-	<div class="container">
+	<div class="container m-container ">
 		<div class="row">
 			<div class="col-lg-4 pl-5 pr-5">
 				<h2 class="title color-orange"><?php echo($langCode['footerAddrTit']); ?></h2>

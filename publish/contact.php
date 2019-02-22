@@ -5,13 +5,13 @@
 <div id="headerImage" class="contact-header">
 	<div class="contact-wrap d-flex flex-direction-column justify-content-center align-item-center">
 		<div class="container text-center">
-			<h2 class="title font-5rem"><?php echo $langCode['contactUs']; ?></h2>
+			<h2 class="title font-5rem m-font-2rem"><?php echo $langCode['contactUs']; ?></h2>
 		</div>
 	</div>
 </div>
 
-<div class="block-wrap light-bg">
-	<div class="container m-container px-5 contact-us">
+<div class="block-wrap light-bg m-pt-0">
+	<div class="container m-container contact-us m-pt-5">
 		<div class="row">
 			<div class="col-lg-4 px-4 d-flex flex-direction-column justify-content-center">
 				<h2 class="title font-3rem">
@@ -40,47 +40,47 @@
 						<div class="row form-group">
 							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_name']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control m-form-control">
+								<input type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row form-group">
 							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_company']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control m-form-control">
+								<input type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row form-group">
 							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_email']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control m-form-control">
+								<input type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row form-group">
 							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_phone']; ?>:</label>
 							<div class="col-lg-9">
 								<div class="input-group">
-									<input type="text" class="form-control m-form-control col-3">
+									<input type="text" class="form-control col-3">
 									<span class="input-group-prepend col-form-label pl-2 pr-2"> - </span>
-									<input type="text" class="form-control m-form-control">
+									<input type="text" class="form-control">
 								</div>
 							</div>
 						</div>
 						<div class="row form-group">
 							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_country']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control m-form-control">
+								<input type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row form-group">
 							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_textarea']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control m-form-control">
+								<input type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row form-group">
 							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_wordVerification']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control m-form-control">
+								<input type="text" class="form-control">
 							</div>
 						</div>
 						<div class="row form-group">
