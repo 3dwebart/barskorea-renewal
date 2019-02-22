@@ -1,10 +1,67 @@
 <?php
 	include_once('header_ui.php');
 	$pageNo = 0;
+	error_reporting(E_ALL);
+
+ini_set("display_errors", 1);
 ?>
+<link rel="stylesheet" href="<?php echo $front_css_url.'/swiper.min.css' ?>">
+<script src="<?php echo $front_js_url.'/swiper.min.js' ?>"></script>
 <div class="">
-	<img src="<?php echo($front_img_url) ?>/main2.png" alt="" class="img-fluid">
+	<div class="main-slide-wrap">
+		<div class="main-slide">
+			<!-- BIGIN :: Slide -->
+			<!-- Slider main container -->
+			<div class="swiper-container">
+			    <!-- Additional required wrapper -->
+			    <div class="swiper-wrapper">
+			        <!-- Slides -->
+			        <div class="swiper-slide">
+			        	<img src="<?php echo $front_img_url; ?>/main1.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
+			        	<img src="<?php echo $front_img_url; ?>/m-main-1.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="<?php echo $front_img_url; ?>/main2.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
+			        	<img src="<?php echo $front_img_url; ?>/m-main-2.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
+			        </div>
+			        <div class="swiper-slide">
+			        	<img src="<?php echo $front_img_url; ?>/main1.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
+			        	<img src="<?php echo $front_img_url; ?>/m-main-3.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
+			        </div>
+			    </div>
+			    <!-- If we need pagination -->
+			    <div class="swiper-pagination"></div>
+
+			    <!-- If we need navigation buttons -->
+			    <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>
+
+			    <!-- If we need scrollbar -->
+			    <div class="swiper-scrollbar"></div>
+			</div>
+			<!-- END :: Slide -->
+		</div>
+	</div>
 </div>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+</script>
 <div class="block-wrap dark-bg bg-att1">
 	<div class="container">
 		<div class="row p-0">
@@ -98,12 +155,12 @@
 					</div>
 				</div>
 				<div class="row-5">
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2 text-xs-center"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2 text-xs-center"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -158,12 +215,12 @@
 					</div>
 				</div>
 				<div class="row-5">
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-6 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
 				</div>
 			</div>
 		</div>
