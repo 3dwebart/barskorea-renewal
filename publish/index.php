@@ -155,12 +155,12 @@ var swiper = new Swiper('.swiper-container', {
 					</div>
 				</div>
 				<div class="row-5">
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2 text-xs-center"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-4 col-sm-4 col-2 mt-2 mb-2 text-xs-center"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -215,12 +215,12 @@ var swiper = new Swiper('.swiper-container', {
 					</div>
 				</div>
 				<div class="row-5">
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
-					<div class="col-lg-2 col-md-4 col-sm-4 col-4 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
 				</div>
 			</div>
 		</div>

@@ -260,12 +260,19 @@ a[data-vimeo] img { display: block; }
 	.m-pt-3 { padding-top: 1rem!important; }
 	.m-pt-4 { padding-top: 1.5rem!important; }
 	.m-pt-5 { padding-top: 3rem!important; }
+	.m-mt-0 { margin-top: 0 !important; }
 	.m-pt-0 { padding-top: 0 !important; }
+	.m-mx-0 { margin-left: 0 !important; margin-right: 0 !important; }
+	.m-px-0 { padding-left: 0 !important; padding-right: 0 !important; }
 	.m-font-3rem { font-size: 3rem !important; }
 	.m-form-control { height: calc(2em + 1rem + 2px); font-size: 3rem; }
 	.quick-top { transform: translateX(-120%); }
 	.m-font-2rem { font-size: 2rem !important; }
 	.m-font-3rem { font-size: 3rem !important; }
+	.m-text-left {
+		text-align: left !important;
+	}
+	.m-w-100 { width: 100%; }
 }
 @media(min-width: 380px) and (max-width: 991px) {
 	.top-bar { display: none; }
@@ -298,9 +305,6 @@ a[data-vimeo] img { display: block; }
 	.modal-header .close { font-size: 6rem; }
 	.carousel-control-next span, .carousel-control-prev span { transform: scale(5); }
 	.carousel-indicators li { width: 80px; height: 15px; }
-	.m-text-left {
-		text-align: left !important;
-	}
 	.month-year { font-size: 3rem; color: rgba(86,189,181,1); }
 	*/
 	.m-font-3rem { font-size: 3rem !important; }

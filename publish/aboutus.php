@@ -4,7 +4,8 @@
 ?>
 <div class="block-wrap light-bg">
 	<div class="container">
-		<img src="<?php echo($front_img_url) ?>/slider_8-3.jpg" alt="top image" class="img-fluid" />
+		<img src="<?php echo($front_img_url) ?>/slider_8-3.jpg" alt="top image" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
+		<img src="<?php echo($front_img_url) ?>/m-slider_8-3.jpg" alt="top image" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-none" />
 	</div>
 </div>
 <div class="block-wrap dark-bg">

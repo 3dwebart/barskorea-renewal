@@ -33,9 +33,9 @@
 </div>
 
 <div class="block-wrap light-bg">
-	<div class="container text-center">
+	<div class="container m-container text-center">
 		<div class="row">
-			<div class="col-lg-6 d-flex flex-direction-column space-between align-item-center">
+			<div class="col-lg-6 m-px-0 d-flex flex-direction-column space-between align-item-center">
 				<div class="font-7rem">
 					<i class="fa fa-camera"></i>
 				</div>
@@ -43,30 +43,30 @@
 				<p class="content font-d75rem">
 					<?php echo $langCode['PhotoAndDesignCon']; ?>
 				</p>
-				<div class="row-8">
-					<div class="col-lg-3 col-6">
+				<div class="row-8 m-mx-0">
+					<div class="col-lg-3 col-6 m-px-0">
 						<a href="#pad" data-id="1" data-toggle="modal" data-target="#padModal" class="modal-btn"><img src="<?php echo $front_img_url; ?>/bkkorea/design-7-560x560.jpg" alt="photo studio" class="img-fluid" /></a>
 					</div>
-					<div class="col-lg-3 col-6">
+					<div class="col-lg-3 col-6 m-px-0">
 						<a href="#pad" data-id="2" data-toggle="modal" data-target="#padModal" class="modal-btn"><img src="<?php echo $front_img_url; ?>/bkkorea/design-9-560x560.jpg" alt="photo studio" class="img-fluid" /></a>
 					</div>
-					<div class="col-lg-3 col-6">
+					<div class="col-lg-3 col-6 m-px-0">
 						<a href="#pad" data-id="3" data-toggle="modal" data-target="#padModal" class="modal-btn"><img src="<?php echo $front_img_url; ?>/bkkorea/design-1-560x560.jpg" alt="photo studio" class="img-fluid" /></a>
 					</div>
-					<div class="col-lg-3 col-6">
+					<div class="col-lg-3 col-6 m-px-0">
 						<a href="#pad" data-id="4" data-toggle="modal" data-target="#padModal" class="modal-btn"><img src="<?php echo $front_img_url; ?>/bkkorea/design-8-560x560.jpg" alt="photo studio" class="img-fluid" /></a>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6">
-				<img src="<?php echo $front_img_url; ?>/bkkorea/photo-768x576.jpg" alt="photo studio" class="img-fluid" />
+			<div class="col-lg-6 m-px-0">
+				<img src="<?php echo $front_img_url; ?>/bkkorea/photo-768x576.jpg" alt="photo studio" class="img-fluid m-w-100" />
 			</div>
 		</div>
-		<div class="row mt-4">
-			<div class="col-lg-6">
-				<img src="<?php echo $front_img_url; ?>/bkkorea/interior-768x576.jpg" alt="photo studio" class="img-fluid" />
+		<div class="row mt-4 m-mt-0">
+			<div class="col-lg-6 order-2 order-sm-1 order-md-2 order-lg-1 order-xl-1 m-px-0">
+				<img src="<?php echo $front_img_url; ?>/bkkorea/interior-768x576.jpg" alt="photo studio" class="img-fluid m-w-100" />
 			</div>
-			<div class="col-lg-6 d-flex flex-direction-column justify-content-center align-item-center">
+			<div class="col-lg-6 d-flex flex-direction-column justify-content-center align-item-center oeder-1 order-sm-1 order-md-1 order-lg-2 order-xl-2">
 				<div class="font-7rem">
 					<i class="fa fa-building"></i>
 				</div>
