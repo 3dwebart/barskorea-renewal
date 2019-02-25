@@ -1,7 +1,8 @@
 <?php
 	include_once('header_ui.php');
 	include_once($include_dir."/simple-php-captcha.php");
-	$_SESSION['captcha'] = simple_php_captcha();
+	$captcha = simple_php_captcha();
+	$_SESSION['captcha'] = $captcha;
 	$pageNo = 0;
 ?>
 <link rel="stylesheet" href="<?php echo $front_css_url.'/swiper.min.css' ?>">
@@ -473,57 +474,66 @@ $res = $db -> query($sql, array($galleryFile));
 			</div>
 			<div class="col-lg-6">
 				<h2 class="bar-title text-center"><?php echo $langCode['Features']; ?></h2>
-				<form action="">
+				<form method="" action="" class="w-100" id="contactUsForm">
 					<div class="row form-group">
-						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_name']; ?>:</label>
+						<label for="name" class="col-lg-3 col-form-label"><?php echo $langCode['f_name']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control m-form-control">
+							<input type="text" name="name" class="form-control" id="name">
 						</div>
 					</div>
 					<div class="row form-group">
-						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_company']; ?>:</label>
+						<label for="company" class="col-lg-3 col-form-label"><?php echo $langCode['f_company']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control m-form-control">
+							<input type="text" name="company" class="form-control" id="company">
 						</div>
 					</div>
 					<div class="row form-group">
-						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_email']; ?>:</label>
+						<label for="email" class="col-lg-3 col-form-label"><?php echo $langCode['f_email']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control m-form-control">
+							<input type="email" name="email" class="form-control" id="email">
 						</div>
 					</div>
 					<div class="row form-group">
-						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_phone']; ?>:</label>
+						<label for="phone1" class="col-lg-3 col-form-label"><?php echo $langCode['f_phone']; ?>:</label>
 						<div class="col-lg-9">
 							<div class="input-group">
-								<input type="text" class="form-control m-form-control col-3">
+								<input type="tel" name="phone1" class="form-control col-3" id="phone1">
 								<span class="input-group-prepend col-form-label pl-2 pr-2"> - </span>
-								<input type="text" class="form-control m-form-control">
+								<input type="tel" name="phone2" class="form-control">
 							</div>
 						</div>
 					</div>
 					<div class="row form-group">
-						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_country']; ?>:</label>
+						<label for="country" class="col-lg-3 col-form-label"><?php echo $langCode['f_country']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control m-form-control">
+							<select name="country" class="form-control bfh-countries" data-country="US" id="country"></select>
 						</div>
 					</div>
 					<div class="row form-group">
-						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_textarea']; ?>:</label>
+						<label for="message" class="col-lg-3 col-form-label"><?php echo $langCode['f_textarea']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control m-form-control">
+							<textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
 						</div>
 					</div>
 					<div class="row form-group">
 						<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_wordVerification']; ?>:</label>
 						<div class="col-lg-9">
-							<input type="text" class="form-control m-form-control">
+							<div class="input-group">
+								<div class="input-group-append">
+									<span class="input-group-text p-0">
+										<?php
+											echo '<img src="'. $captcha['image_src'] . '" alt="CAPTCHA code" class="captcha-image" />';
+										?>
+									</span>
+								</div>
+								<input type="text" name="captcha" class="form-control captcha-code">
+							</div>
 						</div>
 					</div>
 					<div class="row form-group">
 						<div class="input-group">
 							<div class="btn-group">
-								<button type="submit" class="btn btn-danger"><?php echo $langCode['f_submit']; ?></button>
+								<button type="submit" class="btn btn-danger submit-btn"><?php echo $langCode['f_submit']; ?></button>
 								<button type="submit" class="btn btn-warning"><?php echo $langCode['f_reset']; ?></button>
 							</div>
 						</div>
@@ -533,6 +543,26 @@ $res = $db -> query($sql, array($galleryFile));
 		</div>
 	</div>
 </div>
+<script>
+(function($) {
+	jQuery(document).on('click', '.submit-btn', function() {
+		var vaptchaVal = jQuery('input[name="captcha"]').val();
+		if(captchaCode == vaptchaVal) {
+			jQuery('#contactUsForm').attr('method', 'post');
+			jQuery('#contactUsForm').attr('action', 'contact_ok.php');
+			jQuery('#contactUsForm').submit();
+		} else if(vaptchaVal == '' || vaptchaVal === undefined) {
+			alert('자동 등록방지 코드를 입력해 주세요.');
+			jQuery('captcha-code').focus();
+			return false;
+		} else {
+			alert('자동 등록방지 코드를 다시 입력해 주세요.');
+			jQuery('captcha-code').focus();
+			return false;
+		}
+	});
+})(jQuery);
+</script>
 <!-- BIGIN :: Youtube Gallery -->
 <script type='text/javascript' src='<?php echo($front_plugins_url); ?>/unitegallery/js/unitegallery.min.js'></script>	
 <link rel='stylesheet' href='<?php echo($front_plugins_url); ?>/unitegallery/css/unite-gallery.css' type='text/css' />

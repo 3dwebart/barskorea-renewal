@@ -61,45 +61,45 @@
 			</div>
 			<div class="col-lg-8 d-flex flex-direction-column justify-content-center bg-w">
 				<div class="row-3 pl-4">
-					<form action="" class="w-100">
+					<form method="" action="" class="w-100" id="contactUsForm">
 						<div class="row form-group">
-							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_name']; ?>:</label>
+							<label for="name" class="col-lg-3 col-form-label"><?php echo $langCode['f_name']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control">
+								<input type="text" name="name" class="form-control" id="name">
 							</div>
 						</div>
 						<div class="row form-group">
-							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_company']; ?>:</label>
+							<label for="company" class="col-lg-3 col-form-label"><?php echo $langCode['f_company']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control">
+								<input type="text" name="company" class="form-control" id="company">
 							</div>
 						</div>
 						<div class="row form-group">
-							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_email']; ?>:</label>
+							<label for="email" class="col-lg-3 col-form-label"><?php echo $langCode['f_email']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control">
+								<input type="email" name="email" class="form-control" id="email">
 							</div>
 						</div>
 						<div class="row form-group">
-							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_phone']; ?>:</label>
+							<label for="phone1" class="col-lg-3 col-form-label"><?php echo $langCode['f_phone']; ?>:</label>
 							<div class="col-lg-9">
 								<div class="input-group">
-									<input type="text" class="form-control col-3">
+									<input type="tel" name="phone1" class="form-control col-3" id="phone1">
 									<span class="input-group-prepend col-form-label pl-2 pr-2"> - </span>
-									<input type="text" class="form-control">
+									<input type="tel" name="phone2" class="form-control">
 								</div>
 							</div>
 						</div>
 						<div class="row form-group">
-							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_country']; ?>:</label>
+							<label for="country" class="col-lg-3 col-form-label"><?php echo $langCode['f_country']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control">
+								<select name="country" class="form-control bfh-countries" data-country="US" id="country"></select>
 							</div>
 						</div>
 						<div class="row form-group">
-							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_textarea']; ?>:</label>
+							<label for="message" class="col-lg-3 col-form-label"><?php echo $langCode['f_textarea']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control">
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
 							</div>
 						</div>
 						<div class="row form-group">
@@ -115,7 +115,6 @@
 									</div>
 									<input type="text" name="captcha" class="form-control captcha-code">
 								</div>
-								
 							</div>
 						</div>
 						<div class="row form-group">
@@ -188,13 +187,17 @@
 	var captchaCode = '<?php echo $captcha["code"]; ?>';
 	jQuery(document).on('click', '.submit-btn', function() {
 		var vaptchaVal = jQuery('input[name="captcha"]').val();
-		alert('val :: ' + vaptchaVal + ' == captchaCode :: ' + captchaCode);
 		if(captchaCode == vaptchaVal) {
-			alert('연결');
+			jQuery('#contactUsForm').attr('method', 'post');
+			jQuery('#contactUsForm').attr('action', 'contact_ok.php');
+			jQuery('#contactUsForm').submit();
+		} else if(vaptchaVal == '' || vaptchaVal === undefined) {
+			alert('자동 등록방지 코드를 입력해 주세요.');
+			jQuery('captcha-code').focus();
 			return false;
 		} else {
-			
 			alert('자동 등록방지 코드를 다시 입력해 주세요.');
+			jQuery('captcha-code').focus();
 			return false;
 		}
 	});

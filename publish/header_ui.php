@@ -58,6 +58,7 @@ include_once($site_dir.'/language/'.$currentLang.'.php');
 <link rel="stylesheet" href="<?php echo($front_css_url); ?>/custom.css">
 <script src="<?php echo($front_js_url); ?>/jquery-3.3.1.min.js"></script>
 <script src="<?php echo($front_js_url); ?>/bootstrap.min.js"></script>
+<script src="<?php echo($front_js_url); ?>/bootstrap-formhelpers.min.js"></script>
 <script src="<?php echo($front_js_url); ?>/jquery.cookie.js"></script>
 <script src="<?php echo($front_js_url); ?>/custom.js"></script>
 </head>
