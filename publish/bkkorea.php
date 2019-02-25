@@ -119,37 +119,37 @@
 					<?php echo $langCode['MenuDevelopmentCon']; ?>
 				</p>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 m-px-0">
 				<img src="<?php echo $front_img_url; ?>/bkkorea/menu-768x576.jpg" alt="photo studio" class="img-fluid" />
 			</div>
 		</div>
-		<div class="row mt-4">
-			<div class="col-lg-3 col-6">
+		<div class="row mt-4 m-mt-0">
+			<div class="col-lg-3 col-6 m-px-0">
 				<a href="#md" data-id="1" data-toggle="modal" data-target="#mdModal" class="modal-btn">
 					<img src="<?php echo $front_img_url ?>/bkkorea/bek-gallery-13.jpg" alt="" class="img-fluid" />
 				</a>
 			</div>
-			<div class="col-lg-3 col-6">
+			<div class="col-lg-3 col-6 m-px-0">
 				<a href="#md" data-id="2" data-toggle="modal" data-target="#mdModal" class="modal-btn">
 					<img src="<?php echo $front_img_url ?>/bkkorea/bek-gallery-1.jpg" alt="" class="img-fluid" />
 				</a>
 			</div>
-			<div class="col-lg-3 col-6">
+			<div class="col-lg-3 col-6 m-px-0">
 				<a href="#md" data-id="3" data-toggle="modal" data-target="#mdModal" class="modal-btn">
 					<img src="<?php echo $front_img_url ?>/bkkorea/bek-gallery-6.jpg" alt="" class="img-fluid" />
 				</a>
 			</div>
-			<div class="col-lg-3 col-6">
+			<div class="col-lg-3 col-6 m-px-0">
 				<a href="#md" data-id="4" data-toggle="modal" data-target="#mdModal" class="modal-btn">
 					<img src="<?php echo $front_img_url ?>/bkkorea/bek-gallery-3.jpg" alt="" class="img-fluid" />
 				</a>
 			</div>
 		</div>
-		<div class="row mt-4">
-			<div class="col-lg-6">
+		<div class="row mt-4 m-mt-0">
+			<div class="col-lg-6 m-px-0">
 				<img src="<?php echo $front_img_url; ?>/bkkorea/Training-768x576.jpg" alt="photo studio" class="img-fluid" />
 			</div>
-			<div class="col-lg-6 d-flex flex-direction-column space-between align-item-center">
+			<div class="col-lg-6 m-px-0 d-flex flex-direction-column space-between align-item-center">
 				<div class="font-7rem">
 					<i class="fa fa-bullhorn"></i>
 				</div>
@@ -157,23 +157,23 @@
 				<p class="content font-d75rem">
 					<?php echo $langCode['TrainingCon']; ?>
 				</p>
-				<div class="row-8">
-					<div class="col-lg-3 col-6">
+				<div class="row-8 m-mx-0">
+					<div class="col-lg-3 col-6 m-px-0">
 						<a href="#training" data-id="1" data-toggle="modal" data-target="#trainingModal" class="modal-btn">
 							<img src="<?php echo $front_img_url; ?>/bkkorea/training-2.jpg" alt="Trading image" class="img-fluid" />
 						</a>
 					</div>
-					<div class="col-lg-3 col-6">
+					<div class="col-lg-3 col-6 m-px-0">
 						<a href="#training" data-id="2" data-toggle="modal" data-target="#trainingModal" class="modal-btn">
 							<img src="<?php echo $front_img_url; ?>/bkkorea/training-3.jpg" alt="Trading image" class="img-fluid" />
 						</a>
 					</div>
-					<div class="col-lg-3 col-6">
+					<div class="col-lg-3 col-6 m-px-0">
 						<a href="#training" data-id="3" data-toggle="modal" data-target="#trainingModal" class="modal-btn">
 							<img src="<?php echo $front_img_url; ?>/bkkorea/training-5.jpg" alt="Trading image" class="img-fluid" />
 						</a>
 					</div>
-					<div class="col-lg-3 col-6">
+					<div class="col-lg-3 col-6 m-px-0">
 						<a href="#training" data-id="4" data-toggle="modal" data-target="#trainingModal" class="modal-btn">
 							<img src="<?php echo $front_img_url; ?>/bkkorea/training-7.jpg" alt="Trading image" class="img-fluid" />
 						</a>

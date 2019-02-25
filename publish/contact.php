@@ -1,5 +1,30 @@
 <?php
 	include_once('header_ui.php');
+	//include_once($include_dir."/simple-php-captcha.php");
+	$captcha = array();
+
+	include($include_dir."/simple-php-captcha.php");
+	$captcha = simple_php_captcha();
+	$_SESSION['captcha'] = $captcha;
+
+	/*
+	$_SESSION['captcha'] = simple_php_captcha( array(
+	    'min_length' => 5,
+	    'max_length' => 5,
+	    //'backgrounds' => array(image.png', ...),
+	    //'fonts' => array('font.ttf', ...),
+	    'characters' => 'ABCDEFGHJKLMNPRSTUVWXYZabcdefghjkmnprstuvwxyz23456789',
+	    'min_font_size' => 28,
+	    'max_font_size' => 28,
+	    'color' => '#666',
+	    'angle_min' => 0,
+	    'angle_max' => 10,
+	    'shadow' => true,
+	    'shadow_color' => '#fff',
+	    'shadow_offset_x' => -1,
+	    'shadow_offset_y' => 1
+	));
+	*/
 	$pageNo = 5;
 ?>
 <div id="headerImage" class="contact-header">
@@ -9,7 +34,7 @@
 		</div>
 	</div>
 </div>
-
+<?php print_r($captcha); ?>
 <div class="block-wrap light-bg m-pt-0">
 	<div class="container m-container contact-us m-pt-5">
 		<div class="row">
@@ -80,13 +105,23 @@
 						<div class="row form-group">
 							<label for="" class="col-lg-3 col-form-label"><?php echo $langCode['f_wordVerification']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" class="form-control">
+								<div class="input-group">
+									<div class="input-group-append">
+										<span class="input-group-text p-0">
+											<?php
+												echo '<img src="'. $captcha['image_src'] . '" alt="CAPTCHA code" class="captcha-image" />';
+											?>
+										</span>
+									</div>
+									<input type="text" name="captcha" class="form-control captcha-code">
+								</div>
+								
 							</div>
 						</div>
 						<div class="row form-group">
 							<div class="input-group">
 								<div class="btn-group">
-									<button type="submit" class="btn btn-danger"><?php echo $langCode['f_submit']; ?></button>
+									<button type="submit" class="btn btn-danger submit-btn"><?php echo $langCode['f_submit']; ?></button>
 									<button type="submit" class="btn btn-warning"><?php echo $langCode['f_reset']; ?></button>
 								</div>
 							</div>
@@ -149,6 +184,19 @@
 	});
 	jQuery(window).resize(function() {
 		headerImageResize();
+	});
+	var captchaCode = '<?php echo $captcha["code"]; ?>';
+	jQuery(document).on('click', '.submit-btn', function() {
+		var vaptchaVal = jQuery('input[name="captcha"]').val();
+		alert('val :: ' + vaptchaVal + ' == captchaCode :: ' + captchaCode);
+		if(captchaCode == vaptchaVal) {
+			alert('연결');
+			return false;
+		} else {
+			
+			alert('자동 등록방지 코드를 다시 입력해 주세요.');
+			return false;
+		}
 	});
 })(jQuery);
 </script>

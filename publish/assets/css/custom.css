@@ -1,4 +1,5 @@
-********* END :: Common **********/
+/********** END :: Common **********/
+.captcha-image { max-height: 34px !important; }
 a { color: rgba(86,189,181,1); }
 a:hover { color: rgba(86,189,181,1); }
 .font-d75rem { font-size: 0.75rem !important; }

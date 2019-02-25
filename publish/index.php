@@ -1,9 +1,8 @@
 <?php
 	include_once('header_ui.php');
+	include_once($include_dir."/simple-php-captcha.php");
+	$_SESSION['captcha'] = simple_php_captcha();
 	$pageNo = 0;
-	error_reporting(E_ALL);
-
-ini_set("display_errors", 1);
 ?>
 <link rel="stylesheet" href="<?php echo $front_css_url.'/swiper.min.css' ?>">
 <script src="<?php echo $front_js_url.'/swiper.min.js' ?>"></script>
