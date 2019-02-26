@@ -13,31 +13,31 @@
 			<!-- BIGIN :: Slide -->
 			<!-- Slider main container -->
 			<div class="swiper-container">
-			    <!-- Additional required wrapper -->
-			    <div class="swiper-wrapper">
-			        <!-- Slides -->
-			        <div class="swiper-slide">
-			        	<img src="<?php echo $front_img_url; ?>/main1.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
-			        	<img src="<?php echo $front_img_url; ?>/m-main-1.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="<?php echo $front_img_url; ?>/main2.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
-			        	<img src="<?php echo $front_img_url; ?>/m-main-2.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
-			        </div>
-			        <div class="swiper-slide">
-			        	<img src="<?php echo $front_img_url; ?>/main3.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
-			        	<img src="<?php echo $front_img_url; ?>/m-main-3.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
-			        </div>
-			    </div>
-			    <!-- If we need pagination -->
-			    <div class="swiper-pagination"></div>
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<img src="<?php echo $front_img_url; ?>/main1.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
+						<img src="<?php echo $front_img_url; ?>/m-main-1.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
+					</div>
+					<div class="swiper-slide">
+						<img src="<?php echo $front_img_url; ?>/main2.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
+						<img src="<?php echo $front_img_url; ?>/m-main-2.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
+					</div>
+					<div class="swiper-slide">
+						<img src="<?php echo $front_img_url; ?>/main3.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
+						<img src="<?php echo $front_img_url; ?>/m-main-3.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
+					</div>
+				</div>
+				<!-- If we need pagination -->
+				<div class="swiper-pagination"></div>
 
-			    <!-- If we need navigation buttons -->
-			    <div class="swiper-button-prev"></div>
-			    <div class="swiper-button-next"></div>
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 
-			    <!-- If we need scrollbar -->
-			    <div class="swiper-scrollbar"></div>
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar"></div>
 			</div>
 			<!-- END :: Slide -->
 		</div>
@@ -45,21 +45,21 @@
 </div>
 <script>
 var swiper = new Swiper('.swiper-container', {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    loop: true,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+	spaceBetween: 30,
+	centeredSlides: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	navigation: {
+		nextEl: '.swiper-button-next',
+		prevEl: '.swiper-button-prev',
+	},
 });
 </script>
 <div class="block-wrap dark-bg bg-att1">
@@ -312,7 +312,7 @@ var swiper = new Swiper('.swiper-container', {
 		<h2 class="bar-title"><?php echo $langCode['CheckOutOurSuperSnowMachines']; ?></h2>
 		<p class="content"><?php echo $langCode['CheckOutOurSuperSnowMachinesCon']; ?></p>
 		<a href="https://vimeo.com/242702098" data-vimeo data-vimeo-loop data-vimeo-autoplay data-vimeo-maxwidth="640" class="vimeo">
-		    <img src="http://posterfra.me/https://vimeo.com/242702098" alt="Barskorea Super Snow Machines" />
+			<img src="http://posterfra.me/https://vimeo.com/242702098" alt="Barskorea Super Snow Machines" />
 		</a>
 	</div>
 </div>
@@ -321,7 +321,7 @@ var swiper = new Swiper('.swiper-container', {
 		<h2 class="bar-title"><?php echo $langCode['YourBrandingPartner​']; ?></h2>
 		<p class="content"><?php echo $langCode['YourBrandingPartner​Con']; ?></p>
 		<a href="https://vimeo.com/287376612" data-vimeo data-vimeo-loop data-vimeo-autoplay data-vimeo-maxwidth="640" class="vimeo">
-		    <img src="http://posterfra.me/https://vimeo.com/287376612" alt="Barskorea Super Snow Machines" />
+			<img src="http://posterfra.me/https://vimeo.com/287376612" alt="Barskorea Super Snow Machines" />
 		</a>
 	</div>
 </div>
@@ -405,7 +405,7 @@ $res = $db -> query($sql, array($galleryFile));
 					<ul class="carousel-indicators">
 						<?php
 							for($i = 0; $i < count($dataIdArr); $i++) {
-    							echo '<li data-target="#demo" data-slide-to="'.$i.'" data-id="'.$dataIdArr[$i].'"></li>';
+								echo '<li data-target="#demo" data-slide-to="'.$i.'" data-id="'.$dataIdArr[$i].'"></li>';
 							}
 						?>
 					</ul>
@@ -641,9 +641,9 @@ if($db -> num_rows() == 0) {
   _gaq.push(['_trackPageview']);
 
   (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
 <!-- BIGIN :: 2012 Introduce korea sulbing contact  -->
