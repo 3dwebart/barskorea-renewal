@@ -33,8 +33,12 @@
 				<div class="swiper-pagination"></div>
 
 				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev">
+					<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+				</div>
+				<div class="swiper-button-next">
+					<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+				</div>
 
 				<!-- If we need scrollbar -->
 				<div class="swiper-scrollbar"></div>

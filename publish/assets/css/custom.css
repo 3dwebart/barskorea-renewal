@@ -245,6 +245,28 @@ a[data-vimeo] img { display: block; }
 	opacity: 1;
 }
 .swiper-container-horizontal>.swiper-scrollbar { display: none; }
+
+.main-slide-wrap .swiper-button-next,
+.main-slide-wrap .swiper-button-prev {
+	background-image: none;
+	color: #fff;
+	font-size: 3rem;
+	width: 48px;
+	height: 48px;
+	opacity: .5;
+	transition: all .5s ease;
+}
+.main-slide-wrap .swiper-button-next:hover,
+.main-slide-wrap .swiper-button-prev:hover,
+.main-slide-wrap .swiper-button-next:focus,
+.main-slide-wrap .swiper-button-prev:focus {
+	opacity: 1;
+	transition: all .5s ease;
+}
+.main-slide-wrap .swiper-button-next i,
+.main-slide-wrap .swiper-button-prev i {
+	transform: translateY(-25%);
+}
 /********** END :: Swiper slide **********/
 /********** BIGIN :: bkkorea.php style **********/
 .logo-box { background-color: #efefef; }
