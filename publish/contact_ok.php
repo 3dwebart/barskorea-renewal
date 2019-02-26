@@ -1,5 +1,8 @@
 <?php
 $header_path = dirname(__FILE__)."/header.php";
+error_reporting(E_ALL);
+
+ini_set("display_errors", 1);
 include_once($header_path);
 include_once($include_dir.'/CountryChk.php');
 $name     = post('name');
@@ -51,48 +54,48 @@ try {
     //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 
     //Content
-    $htmlMessage = '<table>';
+    $htmlMessage = '<table border="1" style="width: 100%;">';
     $htmlMessage .= '<tbody>';
     $htmlMessage .= '<tr>';
-    $htmlMessage .= '<th align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<th align="left" valign="top" style="padding: 5px 10px; width: 15%;">';
     $htmlMessage .= 'NAME';
     $htmlMessage .= '</th>';
-    $htmlMessage .= '<td align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<td align="left" valign="top" style="padding: 5px 10px; width: 35%;">';
     $htmlMessage .= $name;
     $htmlMessage .= '</td>';
-    $htmlMessage .= '<th align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<th align="left" valign="top" style="padding: 5px 10px; width: 15%;">';
     $htmlMessage .= 'COMPANY';
     $htmlMessage .= '</th>';
-    $htmlMessage .= '<td align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<td align="left" valign="top" style="padding: 5px 10px; width: 35%;">';
     $htmlMessage .= $company;
     $htmlMessage .= '</td>';
     $htmlMessage .= '</tr>';
     $htmlMessage .= '<tr>';
-    $htmlMessage .= '<th align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<th align="left" valign="top" style="padding: 5px 10px;">';
     $htmlMessage .= 'E-mail';
     $htmlMessage .= '</th>';
-    $htmlMessage .= '<td align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<td align="left" valign="top" style="padding: 5px 10px;">';
     $htmlMessage .= $email;
     $htmlMessage .= '</td>';
-    $htmlMessage .= '<th align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<th align="left" valign="top" style="padding: 5px 10px;">';
     $htmlMessage .= 'PHONE';
     $htmlMessage .= '</th>';
-    $htmlMessage .= '<td align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<td align="left" valign="top" style="padding: 5px 10px;">';
     $htmlMessage .= $phone;
     $htmlMessage .= '</td>';
     $htmlMessage .= '</tr>';
     $htmlMessage .= '<tr>';
-    $htmlMessage .= '<th align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<th align="left" valign="top" style="padding: 5px 10px;">';
     $htmlMessage .= 'COUNTRY';
     $htmlMessage .= '</th>';
-    $htmlMessage .= '<td align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<td align="left" valign="top" style="padding: 5px 10px;">';
     $htmlMessage .= $country;
     $htmlMessage .= '</td>';
-    $htmlMessage .= '<th align="left" valihn="top" style="padding: 5px 10px;">';
+    $htmlMessage .= '<th align="left" valign="top" style="padding: 5px 10px;">';
     $htmlMessage .= 'MESSAGE';
     $htmlMessage .= '</th>';
-    $htmlMessage .= '<td align="left" valihn="top" style="padding: 5px 10px;">';
-    $htmlMessage .= $message;
+    $htmlMessage .= '<td align="left" valign="top" style="padding: 5px 10px;">';
+    $htmlMessage .= nl2br($message);
     $htmlMessage .= '</td>';
     $htmlMessage .= '</tr>';
     $htmlMessage .= '</tbody>';

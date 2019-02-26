@@ -65,28 +65,28 @@
 						<div class="row form-group">
 							<label for="name" class="col-lg-3 col-form-label"><?php echo $langCode['f_name']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" name="name" class="form-control" id="name">
+								<input type="text" name="name" class="form-control" id="name" placeholder="Please enter your name">
 							</div>
 						</div>
 						<div class="row form-group">
 							<label for="company" class="col-lg-3 col-form-label"><?php echo $langCode['f_company']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="text" name="company" class="form-control" id="company">
+								<input type="text" name="company" class="form-control" id="company" placeholder="Please enter your company">
 							</div>
 						</div>
 						<div class="row form-group">
 							<label for="email" class="col-lg-3 col-form-label"><?php echo $langCode['f_email']; ?>:</label>
 							<div class="col-lg-9">
-								<input type="email" name="email" class="form-control" id="email">
+								<input type="email" name="email" class="form-control" id="email" placeholder="Please enter your e-mail address">
 							</div>
 						</div>
 						<div class="row form-group">
 							<label for="phone1" class="col-lg-3 col-form-label"><?php echo $langCode['f_phone']; ?>:</label>
 							<div class="col-lg-9">
 								<div class="input-group">
-									<input type="tel" name="phone1" class="form-control col-3" id="phone1">
+									<input type="tel" name="phone1" class="form-control col-3" id="phone1" placeholder="Please enter your country code">
 									<span class="input-group-prepend col-form-label pl-2 pr-2"> - </span>
-									<input type="tel" name="phone2" class="form-control">
+									<input type="tel" name="phone2" class="form-control" placeholder="Please enter the full number containing the area code">
 								</div>
 							</div>
 						</div>
@@ -99,7 +99,7 @@
 						<div class="row form-group">
 							<label for="message" class="col-lg-3 col-form-label"><?php echo $langCode['f_textarea']; ?>:</label>
 							<div class="col-lg-9">
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+								<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Please enter your message"></textarea>
 							</div>
 						</div>
 						<div class="row form-group">
@@ -113,7 +113,7 @@
 											?>
 										</span>
 									</div>
-									<input type="text" name="captcha" class="form-control captcha-code">
+									<input type="text" name="captcha" class="form-control captcha-code" placeholder="Please enter the code to prevent automatic registration">
 								</div>
 							</div>
 						</div>
