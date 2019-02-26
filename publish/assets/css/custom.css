@@ -232,7 +232,7 @@ a[data-vimeo] img { display: block; }
 }
 .copyright { background-color: rgba(0,0,0,1); color: rgba(255,255,255,.8); padding: 5px 0; }
 /********** END :: Footer **********/
-/**/
+/********** BIGIN :: Swiper slide **********/
 .main-slide .swiper-pagination-bullet {
 	width: 30px;
 	height: 7px;
@@ -244,6 +244,8 @@ a[data-vimeo] img { display: block; }
 	background-color: rgba(86,189,181,.7);
 	opacity: 1;
 }
+.swiper-container-horizontal>.swiper-scrollbar { display: none; }
+/********** END :: Swiper slide **********/
 /********** BIGIN :: bkkorea.php style **********/
 .logo-box { background-color: #efefef; }
 /********** END :: bkkorea.php style **********/

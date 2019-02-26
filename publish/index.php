@@ -25,7 +25,7 @@
 			        	<img src="<?php echo $front_img_url; ?>/m-main-2.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
 			        </div>
 			        <div class="swiper-slide">
-			        	<img src="<?php echo $front_img_url; ?>/main1.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
+			        	<img src="<?php echo $front_img_url; ?>/main3.png" alt="" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
 			        	<img src="<?php echo $front_img_url; ?>/m-main-3.png" alt="" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-md" />
 			        </div>
 			    </div>
