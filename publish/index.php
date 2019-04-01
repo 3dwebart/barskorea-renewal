@@ -92,7 +92,7 @@ var swiper = new Swiper('.swiper-container', {
 <div class="block-wrap light-bg">
 	<div class="container">
 		<h2 class="bar-title"><?php echo ucfirst($langCode['company']); ?></h2>
-		<p class="content"><?php echo $langCode['companyCon']; ?></p>
+		<p class="content col-12"><?php echo $langCode['companyCon']; ?></p>
 		<div class="row p-0 pt-5 mt-5">
 			<div class="col-lg-4 text-center">
 				<img src="<?php echo($front_img_url); ?>/resized5-300x300.jpg" alt="" class="img-fluid rounded-circle">
@@ -119,8 +119,8 @@ var swiper = new Swiper('.swiper-container', {
 <!-- BIGIN :: Marchine header -->
 <div class="block-wrap dark-bg" id="machine">
 	<div class="container">
-		<h2 class="bar-title"><?php echo $langCode['BarskoreaSuperSnowMachines']; ?></h2>
-		<p class="content"><?php echo $langCode['BarskoreaSuperSnowMachinesCon']; ?></p>
+		<h2 class="bar-title col-12"><?php echo $langCode['BarskoreaSuperSnowMachines']; ?></h2>
+		<p class="content col-12"><?php echo $langCode['BarskoreaSuperSnowMachinesCon']; ?></p>
 	</div>
 </div>
 <!-- END :: Marchine header -->
@@ -128,7 +128,7 @@ var swiper = new Swiper('.swiper-container', {
 <div class="block-wrap light-bg">
 	<div class="container">
 		<div class="row machine-ex p-0">
-			<div class="col-lg-6 d-flex flex-direction-column space-between">
+			<div class="col-lg-6 order-lg-1 order-2 d-flex flex-direction-column space-between">
 				<div>
 					<h2 class="bar-title text-center"><?php echo($langCode['SUF400NWMK']); ?></h2>
 					<div class="content pl-5 pr-5 mb-5"><?php echo($langCode['SUF400NWMKCon']); ?></div>
@@ -178,7 +178,7 @@ var swiper = new Swiper('.swiper-container', {
 					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
 				</div>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 order-lg-2 order-1">
 				<img src="<?php echo $front_img_url ?>/400MK-960x720.jpg" alt="" class="img-fluid">
 			</div>
 		</div>
@@ -254,7 +254,7 @@ var swiper = new Swiper('.swiper-container', {
 <div class="block-wrap light-bg">
 	<div class="container">
 		<div class="row machine-ex p-0">
-			<div class="col-lg-6 d-flex flex-direction-column space-between">
+			<div class="col-lg-6 order-lg-1 order-2 d-flex flex-direction-column space-between">
 				<div class="">
 					<h2 class="bar-title text-center"><?php echo($langCode['SUF200NWDK']); ?></h2>
 					<div class="content pl-5 pr-5 mb-5"><?php echo($langCode['SUF200NWDKCon']); ?></div>
@@ -304,7 +304,7 @@ var swiper = new Swiper('.swiper-container', {
 					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
 				</div>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 order-lg-2 order-1">
 				<img src="<?php echo $front_img_url ?>/200dk.png" alt="" class="img-fluid">
 			</div>
 		</div>
