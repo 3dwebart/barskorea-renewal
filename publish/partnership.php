@@ -43,7 +43,7 @@
 </div>
 
 <div class="block-wrap light-bg">
-	<div class="container m-container px-5">
+	<div class="container m-container">
 		<div class="row text-center">
 			<div class="col-lg-3 col-6 py-3">
 				<div class="border-box">

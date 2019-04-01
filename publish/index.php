@@ -404,7 +404,7 @@ var swiper = new Swiper('.swiper-container', {
 <div class="features-wrap block-wrap orange-bg">
 	<div class="container text-center">
 		<h2 class="bar-title"><?php echo $langCode['YourBrandingPartner​']; ?></h2>
-		<p class="content"><?php echo $langCode['YourBrandingPartner​Con']; ?></p>
+		<p class="content mp-10"><?php echo $langCode['YourBrandingPartner​Con']; ?></p>
 		<a href="https://vimeo.com/287376612" data-vimeo data-vimeo-loop data-vimeo-autoplay data-vimeo-maxwidth="640" class="vimeo">
 			<img src="http://posterfra.me/https://vimeo.com/287376612" alt="Barskorea Super Snow Machines" />
 		</a>
@@ -445,7 +445,7 @@ $res = $db -> query($sql, array($galleryFile, $galleryTable));
 <div class="features-wrap block-wrap orange-bg">
 	<div class="container">
 		<h2 class="bar-title text-center"><?php echo $langCode['OurMenu']; ?></h2>
-		<p class="content"><?php echo $langCode['OurMenuCon']; ?></p>
+		<p class="content mp-10"><?php echo $langCode['OurMenuCon']; ?></p>
 		<div class="gallery nav nav-pills nav-stacked">
 			<div class="row-5">
 				<?php

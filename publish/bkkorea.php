@@ -28,7 +28,7 @@
 <div class="block-wrap dark-bg">
 	<div class="container text-center">
 		<h2 class="bar-title"><?php echo $langCode['OurServices']; ?></h2>
-		<p class="content"><?php echo $langCode['OurServicesCon']; ?></p>
+		<p class="content col-12"><?php echo $langCode['OurServicesCon']; ?></p>
 	</div>
 </div>
 
@@ -40,7 +40,7 @@
 					<i class="fa fa-camera"></i>
 				</div>
 				<h2 class="title color-orange"><?php echo $langCode['PhotoAndDesign']; ?></h2>
-				<p class="content">
+				<p class="content mp-15">
 					<?php echo $langCode['PhotoAndDesignCon']; ?>
 				</p>
 				<div class="row-8 m-mx-0">
@@ -154,7 +154,7 @@
 					<i class="fa fa-bullhorn"></i>
 				</div>
 				<h2 class="title color-orange"><?php echo $langCode['Training']; ?></h2>
-				<p class="content">
+				<p class="content mp-15">
 					<?php echo $langCode['TrainingCon']; ?>
 				</p>
 				<div class="row-8 m-mx-0">
@@ -186,7 +186,7 @@
 <div class="block-wrap dark-bg" id="BKkoreaBranding">
 	<div class="container text-center">
 		<h2 class="bar-title"><?php echo $langCode['OurBrands']; ?></h2>
-		<p class="content"><?php echo $langCode['OurBrandsCon']; ?></p>
+		<p class="content mp-15"><?php echo $langCode['OurBrandsCon']; ?></p>
 	</div>
 </div>
 <div class="block-wrap light-bg">

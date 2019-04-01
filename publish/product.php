@@ -27,51 +27,51 @@
 <div class="block-wrap light-bg">
 	<div class="container">
 		<div class="row text-center">
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Milk.jpg" alt="Premium Milk Premix" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['PremiumMilkPremix']; ?></h2>
-				<p class="content"><?php echo $langCode['PremiumMilkPremixCon']; ?></p>
+				<!-- <p class="content"><?php echo $langCode['PremiumMilkPremixCon']; ?></p> -->
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Yoghurt.jpg" alt="Premium Yogurt Premix" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['PremiumYogurtPremix']; ?></h2>
-				<p class="content"><?php echo $langCode['PremiumYogurtPremixCon']; ?></p>
+				<!-- <p class="content"><?php echo $langCode['PremiumYogurtPremixCon']; ?></p> -->
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Greentea.jpg" alt="Premium Green Tea Premix" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['PremiumGreenTeaPremix']; ?></h2>
-				<p class="content"><?php echo $langCode['PremiumGreenTeaPremixCon']; ?></p>
+				<!-- <p class="content"><?php echo $langCode['PremiumGreenTeaPremixCon']; ?></p> -->
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Choco.jpg" alt="Premium Choco Premix" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['PremiumChocoPremix']; ?></h2>
-				<p class="content"><?php echo $langCode['PremiumChocoPremixCon']; ?></p>
+				<!-- <p class="content"><?php echo $langCode['PremiumChocoPremixCon']; ?></p> -->
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Taro.jpg" alt="Taro Flavored Premix" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['TaroFlavoredPremix']; ?></h2>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Honeydew.jpg" alt="Honeydew Flavored Premix" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['HoneydewFlavoredPremix']; ?></h2>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Earlgrey.jpg" alt="EarlGrey Flavored Premix" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['EarlGreyFlavoredPremix']; ?></h2>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Coffee.jpg" alt="Coffee Flavored Premix" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['CoffeeFlavoredPremix']; ?></h2>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Coconut.jpg" alt="Coconut Flavored Premix" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['CoconutFlavoredPremix']; ?></h2>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Chai.jpg" alt="Chai Flavored Premix" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['ChaiFlavoredPremix']; ?></h2>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/powder/powder-Soybean.jpg" alt="Soybean Powder" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['SoybeanPowder']; ?></h2>
 			</div>
@@ -97,42 +97,42 @@
 <div class="block-wrap light-bg">
 	<div class="container">
 		<div class="row text-center">
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/sauces/Strawberry.jpg" alt="Strawberry" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['StrawberrySauce']; ?></h2>
 				<p class="content"><?php echo $langCode['StrawberrySauceCon']; ?></p>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/sauces/Orange.jpg" alt="Orange" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['OrangeSauce']; ?></h2>
 				<p class="content"><?php echo $langCode['OrangeSauceCon']; ?></p>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/sauces/Mango.jpg" alt="Mango" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['MangoSauce']; ?></h2>
 				<p class="content"><?php echo $langCode['OrangeSauceCon']; ?></p>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/sauces/Lime.jpg" alt="Lime" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['LimeSauce']; ?></h2>
 				<p class="content"><?php echo $langCode['LimeSauceCon']; ?></p>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/sauces/Kiwi.jpg" alt="Kiwi" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['KiwiSauce']; ?></h2>
 				<p class="content"><?php echo $langCode['KiwiSauceCon']; ?></p>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/sauces/Grape.jpg" alt="Grape" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['GrapeSauce']; ?></h2>
 				<p class="content"><?php echo $langCode['GrapeSauceCon']; ?></p>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/sauces/blueberry.jpg" alt="blueberry" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['BlueberrySauce']; ?></h2>
 				<p class="content"><?php echo $langCode['BlueberrySauceCon']; ?></p>
 			</div>
-			<div class="col-lg-3 mt-5">
+			<div class="col-lg-3 col-6 mt-5">
 				<img src="<?php echo $front_img_url ?>/product/sauces/Banana-1.jpg" alt="Banana" class="img-fluid" />
 				<h2 class="title mt-3"><?php echo $langCode['BananaSauce']; ?></h2>
 				<p class="content"><?php echo $langCode['BananaSauceCon']; ?></p>

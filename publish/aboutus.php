@@ -9,20 +9,20 @@
 		<img src="<?php echo($front_img_url) ?>/200dk-m.jpg" alt="top image" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-none" />
 	</div>
 </div>
-<div class="block-wrap dark-bg">
+<div class="block-wrap dark-bg" id="OurAchievements">
 	<div class="container">
 		<h2 class="bar-title"><?php echo $langCode['OurAchievements']; ?></h2>
 		<div class="row p-0">
 			<div class="col-lg-4 p-3">
-				<p class="content text-center font-7rem">20</p>
+				<p class="content text-center font-7rem count">20</p>
 				<h3 class="title text-center"><?php echo $langCode['Patents']; ?></h3>
 			</div>
 			<div class="col-lg-4 p-3">
-				<p class="content text-center font-7rem">40</p>
+				<p class="content text-center font-7rem count">40</p>
 				<h3 class="title text-center"><?php echo $langCode['ExportCountries']; ?></h3>
 			</div>
 			<div class="col-lg-4 p-3">
-				<p class="content text-center font-7rem">60</p>
+				<p class="content text-center font-7rem count">60</p>
 				<h3 class="title text-center"><?php echo $langCode['OpenedStores']; ?></h3>
 			</div>
 		</div>
@@ -43,7 +43,7 @@
 </div>
 <div class="block-wrap light-bg">
 	<div class="container">
-		<h2 class="title"><?php echo $langCode['CompanyHistory']; ?></h2>
+		<h2 class="title mp-15"><?php echo $langCode['CompanyHistory']; ?></h2>
 		<div class="row align-item-center py-4">
 			<div class="col-lg-6 text-right  m-text-left order-2 order-lg-1">
 				<h3 class="month-year">08,1997</h3>
@@ -98,21 +98,47 @@
 	</div>
 </div>
 <script>
+function historyMovie() {
+	var movieW = jQuery('#history_movie').width();
+	var movieH = movieW / 16 * 9;
+	jQuery('#history_movie').css({
+		height: movieH + 'px'
+	});
+}
 (function($) {
-	function historyMovie() {
-		var movieW = jQuery('#history_movie').width();
-		var movieH = movieW / 16 * 9;
-		jQuery('#history_movie').css({
-			height: movieH + 'px';
-		});
-
-	}
 	jQuery(document).ready(function() {
 		historyMovie();
 	});
 	jQuery(window).resize(function() {
 		historyMovie();
 	});
+	/* BIGIN :: Number count animation */
+	var scrollPos = jQuery(document).scrollTop();
+	var counterPos = jQuery('#OurAchievements').offset().top;
+	function counter(scPos) {
+		//if(scPos > counterPos) {
+			jQuery('.count').each(function () {
+			    jQuery(this).prop('Counter',0).animate({
+			        Counter: jQuery(this).text()
+			    }, {
+			        duration: 5000,
+			        easing: 'swing',
+			        step: function (now) {
+			            $(this).text(Math.ceil(now));
+			        }
+			    });
+			});
+		//}
+	}
+	counter(scrollPos);
+	/*
+	jQuery(window).scroll(function() {
+		scrollPos = jQuery(document).scrollTop();
+		counter(scrollPos);
+		console.log('Moving scroll position :: ' + scrollPos + '\ncpunter position' + counterPos);
+	});
+	*/
+	/* END :: Number count animation */
 })(jQuery);
 </script>
 <?php include_once('footer_ui.php'); ?>

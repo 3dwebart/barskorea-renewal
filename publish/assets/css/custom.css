@@ -16,8 +16,24 @@ p {
 .align-item-center { align-items: center; }
 .underline { text-decoration: underline; }
 @media(max-width: 991px) {
+	.mp-10 {
+		padding: 0 10px;
+	}
 	.mp-15 {
 		padding: 0 15px;
+	}
+}
+@media(min-width: 992px) {
+	.footer-block {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+}
+
+@media(max-width: 991px) {
+	.footer-block {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 #headerImage { background-size: cover; background-repeat: no-repeat; }
@@ -243,7 +259,7 @@ a[data-vimeo] img { display: block; }
 #footer .content {
 	font-size: 0.85rem;
 }
-.copyright { background-color: rgba(0,0,0,1); color: rgba(255,255,255,.8); padding: 5px 0; }
+.copyright { background-color: rgba(0,0,0,1); color: rgba(255,255,255,.8); padding: 5px 10px; font-size: .8rem; }
 /********** END :: Footer **********/
 /********** BIGIN :: Swiper slide **********/
 .main-slide .swiper-pagination-bullet {

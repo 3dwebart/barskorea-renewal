@@ -1,7 +1,7 @@
 <div id="footer" class="features-wrap block-wrap dark-bg pt-5 pb-5">
 	<div class="container m-container ">
 		<div class="row">
-			<div class="col-lg-4 pl-5 pr-5">
+			<div class="col-lg-4 footer-block">
 				<h2 class="title color-orange"><?php echo($langCode['footerAddrTit']); ?></h2>
 				<p class="content">
 					<?php echo($langCode['BarskoreaHeadquarter']) ?><br />
@@ -12,24 +12,27 @@
 					<?php echo($langCode['Web']); ?>. <a href="http://www.barskorea.com/">http://www.barskorea.com/</a>
 				</p>
 			</div>
-			<div class="col-lg-4 pl-5 pr-5">
+			<div class="col-lg-4 footer-block">
 				<h2 class="title color-orange"><?php echo($langCode['footerContactUs']); ?></h2>
 				<p class="content">
 					<?php echo($langCode['footerContactUsCon']); ?>
 				</p>
 			</div>
-			<div class="col-lg-4 pl-5 pr-5">
-				<a href="https://www.instagram.com/barskorea.official/" class="btn btn-info" target="_blank">
-					<i class="fa fa-instagram"></i>
-					<?php echo($langCode['FollowOnInstagram']); ?>
-				</a>
-				<a href="https://www.facebook.com/barskorea.official/" class="btn btn-primary mt-3" target="_blank">
-					<i class="fa fa-facebook-official" aria-hidden="true"></i>
-					Facebook
-				</a>
+			<div class="col-lg-4 footer-block">
+				<span class="d-block">
+					<a href="https://www.instagram.com/barskorea.official/" class="btn btn-info" target="_blank">
+						<i class="fa fa-instagram"></i>
+						<?php echo($langCode['FollowOnInstagram']); ?>
+					</a>
+				</span>
+				<span class="d-block">
+					<a href="https://www.facebook.com/barskorea.official/" class="btn btn-primary mt-3" target="_blank">
+						<i class="fa fa-facebook-official" aria-hidden="true"></i>
+						Facebook
+					</a>
+				</span>
 			</div>
 		</div>
-			
 	</div>
 </div>
 <div class="copyright">
