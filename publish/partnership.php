@@ -166,6 +166,41 @@
 					<p class="content"><?php echo $langCode['BarskoreaIsraelCity']; ?></p>
 				</div>
 			</div>
+			<div class="col-lg-3 col-6 py-3">
+				<div class="border-box">
+					<img src="<?php echo $front_img_url; ?>/partnership/england.png" alt="" class="img-fluid" />
+					<h2 class="title subject title subject pt-3 pb-0"><?php echo strtoupper($langCode['BarskoreaEngland']); ?></h2>
+					<p class="content"><?php echo $langCode['BarskoreaEnglandCity']; ?></p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-6 py-3">
+				<div class="border-box">
+					<img src="<?php echo $front_img_url; ?>/partnership/america.png" alt="" class="img-fluid" />
+					<h2 class="title subject title subject pt-3 pb-0"><?php echo strtoupper($langCode['BarskoreaAmerica']); ?></h2>
+					<p class="content"><?php echo $langCode['BarskoreaAmericaCity']; ?></p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-6 py-3">
+				<div class="border-box">
+					<img src="<?php echo $front_img_url; ?>/partnership/sri_ranka.png" alt="" class="img-fluid" />
+					<h2 class="title subject title subject pt-3 pb-0"><?php echo strtoupper($langCode['BarskoreaSriRanka']); ?></h2>
+					<p class="content"><?php echo $langCode['BarskoreaSriRankaCity']; ?></p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-6 py-3">
+				<div class="border-box">
+					<img src="<?php echo $front_img_url; ?>/partnership/parkistan.png" alt="" class="img-fluid" />
+					<h2 class="title subject title subject pt-3 pb-0"><?php echo strtoupper($langCode['BarskoreaPakistan']); ?></h2>
+					<p class="content"><?php echo $langCode['BarskoreaPakistanCity']; ?></p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-6 py-3">
+				<div class="border-box">
+					<img src="<?php echo $front_img_url; ?>/partnership/vietnam.png" alt="" class="img-fluid" />
+					<h2 class="title subject title subject pt-3 pb-0"><?php echo strtoupper($langCode['BarskoreaVietnam']); ?></h2>
+					<p class="content"><?php echo $langCode['BarskoreaVietnamCity']; ?></p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>

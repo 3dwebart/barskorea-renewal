@@ -5,6 +5,7 @@
 	$_SESSION['captcha'] = $captcha;
 	$pageNo = 0;
 ?>
+<!-- GIHIN :: Main slider -->
 <link rel="stylesheet" href="<?php echo $front_css_url.'/swiper.min.css' ?>">
 <script src="<?php echo $front_js_url.'/swiper.min.js' ?>"></script>
 <div class="">
@@ -66,6 +67,8 @@ var swiper = new Swiper('.swiper-container', {
 	},
 });
 </script>
+<!-- END :: Main slider -->
+<!-- BIGIN :: Our work -->
 <div class="block-wrap dark-bg bg-att1">
 	<div class="container">
 		<div class="row p-0">
@@ -84,9 +87,11 @@ var swiper = new Swiper('.swiper-container', {
 		</div>
 	</div>
 </div>
+<!-- END :: Our work -->
+<!-- BIGIN :: Company -->
 <div class="block-wrap light-bg">
 	<div class="container">
-		<h2 class="bar-title"><?php echo $langCode['company']; ?></h2>
+		<h2 class="bar-title"><?php echo ucfirst($langCode['company']); ?></h2>
 		<p class="content"><?php echo $langCode['companyCon']; ?></p>
 		<div class="row p-0 pt-5 mt-5">
 			<div class="col-lg-4 text-center">
@@ -99,23 +104,27 @@ var swiper = new Swiper('.swiper-container', {
 				<img src="<?php echo($front_img_url); ?>/kitchen-300x300.jpg" alt="" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle2']; ?></h3>
 				<p class="content minH-160"><?php echo $langCode['comProductContent2']; ?></p>
-				<a href="#machine" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
+				<a href="<?php echo $site_url; ?>/product.php#kitchenItems" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
 			</div>
 			<div class="col-lg-4 text-center">
 				<img src="<?php echo($front_img_url); ?>/bek-gallery-17-300x300.jpg" alt="" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle3']; ?></h3>
 				<p class="content minH-160"><?php echo $langCode['comProductContent3']; ?></p>
-				<a href="#machine" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
+				<a href="<?php echo $site_url; ?>/bkkorea.php#BKkoreaBranding" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="block-wrap dark-bg">
+<!-- END :: Company -->
+<!-- BIGIN :: Marchine header -->
+<div class="block-wrap dark-bg" id="machine">
 	<div class="container">
 		<h2 class="bar-title"><?php echo $langCode['BarskoreaSuperSnowMachines']; ?></h2>
 		<p class="content"><?php echo $langCode['BarskoreaSuperSnowMachinesCon']; ?></p>
 	</div>
 </div>
+<!-- END :: Marchine header -->
+<!-- BIGIN :: 400-MK -->
 <div class="block-wrap light-bg">
 	<div class="container">
 		<div class="row machine-ex p-0">
@@ -124,36 +133,38 @@ var swiper = new Swiper('.swiper-container', {
 					<h2 class="bar-title text-center"><?php echo($langCode['SUF400NWMK']); ?></h2>
 					<div class="content pl-5 pr-5 mb-5"><?php echo($langCode['SUF400NWMKCon']); ?></div>
 					<div class="row">
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['Measurements']); ?></h2>
-							<span>543 X 680 X 1400mm</span>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Measurements']); ?></h2>
+							<span>548 X 581 X 1310mm</span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['CoolingType']); ?></h2>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['CoolingType']); ?></h2>
 							<span><?php echo($langCode['Air']); ?>/<?php echo($langCode['Water']); ?></span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['Weight']); ?></h2>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Weight']); ?></h2>
 							<span>130kgs</span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['Production']); ?></h2>
-							<span>350kgs/<?php echo($langCode['day']); ?> (<?php echo($langCode['milk']); ?>)</span>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Production']); ?></h2>
+							<span>300~350kgs/<?php echo($langCode['day']); ?> (<?php echo($langCode['milk']); ?>)</span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['Power']); ?></h2>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Power']); ?></h2>
 							<span>220-240V, 50-60Hz</span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['roductionHour']); ?></h2>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0">
+								<?php echo(ucwords($langCode['ProductionHour'])); ?>
+							</h2>
 							<span>14.6kgs/<?php echo($langCode['hr']); ?> (<?php echo($langCode['milk']); ?>)</span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['IceType']); ?></h2>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['IceType']); ?></h2>
 							<span><?php echo($langCode['Snow']); ?>/<?php echo($langCode['FlavoredShavedIce']); ?></span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['Container']); ?></h2>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Container']); ?></h2>
 							<span>20kg(100bw/200g)</span>
 						</div>
 					</div>
@@ -173,48 +184,56 @@ var swiper = new Swiper('.swiper-container', {
 		</div>
 	</div>
 </div>
+<!-- END :: 400-MK -->
+<!-- BIGIN :: 400-2MK -->
 <div class="block-wrap light-bg">
 	<div class="container">
 		<div class="row machine-ex p-0">
 			<div class="col-lg-6">
-				<img src="<?php echo $front_img_url ?>/200CK-960x720_smaller.jpg" alt="" class="img-fluid">
+				<img src="<?php echo $front_img_url ?>/400-2mk.png" alt="" class="img-fluid">
 			</div>
 			<div class="col-lg-6 d-flex flex-direction-column space-between">
 				<div class="">
-					<h2 class="bar-title text-center"><?php echo($langCode['SUF200NWCK']); ?></h2>
-					<div class="content pl-5 pr-5 mb-5"><?php echo($langCode['SUF200NWCKCon']); ?></div>
+					<h2 class="bar-title text-center">
+						<?php echo($langCode['SUF400NW2MK']); ?>
+					</h2>
+					<div class="content pl-5 pr-5 mb-5">
+						<?php echo($langCode['SUF400NW2MKCon']); ?>
+					</div>
 					<div class="row">
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['Measurements']); ?></h2>
-							<span>392 X 595 X 826mm</span>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Measurements']); ?></h2>
+							<span>548 X 541 X 1250mm</span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['CoolingType']); ?></h2>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['CoolingType']); ?></h2>
 							<span><?php echo($langCode['Air']); ?>/<?php echo($langCode['Water']); ?></span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['Weight']); ?></h2>
-							<span>65kgs</span>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Weight']); ?></h2>
+							<span>130kgs</span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['Production']); ?></h2>
-							<span>200kgs/<?php echo($langCode['day']); ?> (<?php echo($langCode['milk']); ?>)</span>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Production']); ?></h2>
+							<span>300~350kgs/<?php echo($langCode['day']); ?> (<?php echo($langCode['milk']); ?>)</span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['Power']); ?></h2>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Power']); ?></h2>
 							<span>110-240V, 50-60Hz</span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['roductionHour']); ?></h2>
-							<span>8kgs/<?php echo($langCode['hr']); ?> (<?php echo($langCode['milk']); ?>)</span>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0">
+								<?php echo(ucwords($langCode['ProductionHour'])); ?>
+							</h2>
+							<span>12.5kgs/<?php echo($langCode['hr']); ?> (<?php echo($langCode['milk']); ?>)</span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['IceType']); ?></h2>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['IceType']); ?></h2>
 							<span><?php echo($langCode['Snow']); ?>/<?php echo($langCode['FlavoredShavedIce']); ?></span>
 						</div>
-						<div class="col-lg-6">
-							<h2><?php echo($langCode['Container']); ?></h2>
-							<span>6kg(41bw/200g)</span>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Container']); ?></h2>
+							<span>20kg(100bw/200g)</span>
 						</div>
 					</div>
 				</div>
@@ -230,6 +249,68 @@ var swiper = new Swiper('.swiper-container', {
 		</div>
 	</div>
 </div>
+<!-- END :: 400 2MK -->
+<!-- BIGIN :: 200DK -->
+<div class="block-wrap light-bg">
+	<div class="container">
+		<div class="row machine-ex p-0">
+			<div class="col-lg-6 d-flex flex-direction-column space-between">
+				<div class="">
+					<h2 class="bar-title text-center"><?php echo($langCode['SUF200NWDK']); ?></h2>
+					<div class="content pl-5 pr-5 mb-5"><?php echo($langCode['SUF200NWDKCon']); ?></div>
+					<div class="row">
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Measurements']); ?></h2>
+							<span>397 X 600 X 735mm</span>
+						</div>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['CoolingType']); ?></h2>
+							<span><?php echo($langCode['Air']); ?>/<?php echo($langCode['Water']); ?></span>
+						</div>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Weight']); ?></h2>
+							<span>54kgs</span>
+						</div>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Production']); ?></h2>
+							<span>200kgs/<?php echo($langCode['day']); ?> (<?php echo($langCode['milk']); ?>)</span>
+						</div>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Power']); ?></h2>
+							<span>110-240V, 50-60Hz</span>
+						</div>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0">
+								<?php echo(ucwords($langCode['ProductionHour'])); ?>
+							</h2>
+							<span>8.5kgs/<?php echo($langCode['hr']); ?> (<?php echo($langCode['milk']); ?>)</span>
+						</div>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['IceType']); ?></h2>
+							<span><?php echo($langCode['Snow']); ?>/<?php echo($langCode['FlavoredShavedIce']); ?></span>
+						</div>
+						<div class="col-lg-6 mb-3">
+							<h2 class="mb-0"><?php echo($langCode['Container']); ?></h2>
+							<span>6kg(41bw/200g)</span>
+						</div>
+					</div>
+				</div>
+				<div class="row-5">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/kc-150x150.png" alt="KC" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/nsf-150x150.png" alt="NSF" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/pse-150x150.png" alt="PSE" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/tuv-150x150.png" alt="TUV" class="img-fluid"></div>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ul-150x150.png" alt="UL" class="img-fluid"></div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<img src="<?php echo $front_img_url ?>/200dk.png" alt="" class="img-fluid">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END :: 200DK -->
 <div class="features-wrap block-wrap light-bg">
 	<div class="container text-center">
 		<h2 class="bar-title"><?php echo $langCode['Features']; ?></h2>
@@ -338,7 +419,7 @@ var swiper = new Swiper('.swiper-container', {
 					<p class="content"><?php echo $langCode['JoinBKKoreaFamilyCon']; ?></p>
 				</div>
 				<div class="button text-center">
-					<a href="#" class="btn btn-light"><?php echo $langCode['clickMe']; ?></a>
+					<a href="<?php echo $site_url?>/bkkorea.php" class="btn btn-light"><?php echo $langCode['clickMe']; ?></a>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -358,8 +439,8 @@ $res = $db -> query($sql, array($galleryTable));
 for ($i=0; $row = $db -> fetch_assoc(); $i++) { 
 	$idArr[$i] = $row['id'];
 }
-$sql = "SELECT id, document_id, dir, file_name, origin_name FROM %s LIMIT 0, 8";
-$res = $db -> query($sql, array($galleryFile));
+$sql = "SELECT d.id AS doc_id, f.id, f.document_id, f.dir, f.file_name, f.origin_name FROM %s f, %s d WHERE d.id = f.document_id ORDER BY d.id ASC LIMIT 0, 8";
+$res = $db -> query($sql, array($galleryFile, $galleryTable));
 ?>
 <div class="features-wrap block-wrap orange-bg">
 	<div class="container">
@@ -368,6 +449,7 @@ $res = $db -> query($sql, array($galleryFile));
 		<div class="gallery nav nav-pills nav-stacked">
 			<div class="row-5">
 				<?php
+					$tmp = 0;
 					while ($row = $db -> fetch_assoc()) {
 						for($i = 0; $i < count($idArr); $i++) {
 							if ($row['document_id'] == $idArr[$i]) {
@@ -470,11 +552,19 @@ $res = $db -> query($sql, array($galleryFile));
 	});
 </script>
 <!-- } 임시 스크립트 -->
-<div class="features-wrap block-wrap orange-bg">
+<div class="features-wrap contact-submit block-wrap orange-bg">
 	<div class="container">
-		<div class="row">
+		<div class="row align-item-center">
 			<div class="col-lg-6">
 				<img src="<?php echo $front_img_url ?>/map.png" alt="" class="img-fluid" />
+				<p class="py-3">
+					<h5><?php echo($langCode['BarskoreaHeadquarter']) ?></h5>
+					<?php echo($langCode['footerAddrCon']); ?><br />
+					<?php echo($langCode['Email']); ?>. <a href="mailto:barskorea@hanmail.net">barskorea@hanmail.net</a><br />
+					<?php echo($langCode['Tel']); ?>. <a href="tel:+82-32-581-3466">+82-32-581-3466</a><br />
+					<?php echo($langCode['Fax']); ?>. +82-32-581-8937<br />
+					<?php echo($langCode['conpanyWeb']); ?>. <a href="http://www.barskorea.com/" target="_blank">http://www.barskorea.com/</a>
+				</p>
 			</div>
 			<div class="col-lg-6">
 				<h2 class="bar-title text-center"><?php echo $langCode['Features']; ?></h2>
@@ -524,13 +614,15 @@ $res = $db -> query($sql, array($galleryFile));
 						<div class="col-lg-9">
 							<div class="input-group">
 								<div class="input-group-append">
-									<span class="input-group-text p-0">
-										<?php
-											echo '<img src="'. $captcha['image_src'] . '" alt="CAPTCHA code" class="captcha-image" />';
-										?>
-									</span>
+									<label for="captchaCodeInput">
+										<span class="input-group-text p-0">
+											<?php
+												echo '<img src="'. $captcha['image_src'] . '" alt="CAPTCHA code" class="captcha-image" />';
+											?>
+										</span>
+									</label>
 								</div>
-								<input type="text" name="captcha" class="form-control captcha-code">
+								<input type="text" name="captcha" class="form-control captcha-code" id="captchaCodeInput">
 							</div>
 						</div>
 					</div>
@@ -549,9 +641,12 @@ $res = $db -> query($sql, array($galleryFile));
 </div>
 <script>
 (function($) {
+	//var captchaCode = '<?php echo $captcha["code"]; ?>';
 	jQuery(document).on('click', '.submit-btn', function() {
+		var captchaCode = '<?php echo $captcha["code"]; ?>';
 		var vaptchaVal = jQuery('input[name="captcha"]').val();
-		if(captchaCode == vaptchaVal) {
+		console.log(captchaCode + ' | ' +  vaptchaVal);
+		if(captchaCode.toUpperCase() == vaptchaVal.toUpperCase()) {
 			jQuery('#contactUsForm').attr('method', 'post');
 			jQuery('#contactUsForm').attr('action', 'contact_ok.php');
 			jQuery('#contactUsForm').submit();
@@ -580,7 +675,8 @@ $sql = "SELECT
 			FROM bo_table_youtube_files f 
 			WHERE f.document_id = a.id
 		) AS file 
-		FROM bo_table_youtube a";
+		FROM bo_table_youtube a
+		ORDER BY a.sort ASC";
 $res = $db -> query($sql);
 if($db -> num_rows() == 0) {
 ?>
@@ -651,9 +747,9 @@ if($db -> num_rows() == 0) {
   })();
 </script>
 <!-- BIGIN :: 2012 Introduce korea sulbing contact  -->
-<div class="features-wrap block-wrap light-bg">
+<div class="features-wrap block-wrap light-bg pb-0">
 	<div class="container">
-		<div class="row">
+		<div class="row align-item-center">
 			<div class="col-lg-5">
 				<img src="<?php echo($front_img_url) ?>/logo/sulbing2.jpg" alt="Sulbing" class="img-fluid">
 			</div>
@@ -670,65 +766,66 @@ if($db -> num_rows() == 0) {
 </div>
 <!-- END :: 2012 Introduce korea sulbing contact  -->
 <!-- BIGIN :: Partnership logos  -->
-<div class="features-wrap block-wrap light-bg pb-5">
+<div class="features-wrap block-wrap light-bg pt-2 pb-5">
 	<div class="container">
 		<div class="row-5">
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/cafethesnow-1.jpg" alt="cafe he show" class="img-fluid" />
+			<div class="col-lg-3 col-md-4 col-sm-4 col-6">
+				<img src="<?php echo($front_img_url); ?>/logo/bek.png" alt="dessert cafe bek" class="img-fluid" />
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-4 col-6">
+				<img src="<?php echo($front_img_url); ?>/logo/bingbox.png" alt="bingbox" class="img-fluid" />
+			</div>
+			<div class="col-lg-6 col-md-8 col-sm-8 col-12">
+				<div class="row-5">
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<img src="<?php echo($front_img_url); ?>/logo/chowking.png" alt="chowking" class="img-fluid" />
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<img src="<?php echo($front_img_url); ?>/logo/maancoffee.png" alt="maancoffee" class="img-fluid" />
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<img src="<?php echo($front_img_url); ?>/logo/naza.png" alt="naza" class="img-fluid" />
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<img src="<?php echo($front_img_url); ?>/logo/snowbowl.png" alt="seolhwa" class="img-fluid" />
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<img src="<?php echo($front_img_url); ?>/logo/rottibun.png" alt="rottibun" class="img-fluid" />
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<img src="<?php echo($front_img_url); ?>/logo/pb.png" alt="paris baguette" class="img-fluid" />
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<img src="<?php echo($front_img_url); ?>/logo/sulmida.jpg" alt="sulmida" class="img-fluid" />
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6">
+						<img src="<?php echo($front_img_url); ?>/logo/okrumong.png" alt="옥루몽" class="img-fluid" />
+					</div>
+				</div>
 			</div>
 			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/chowking-1.jpg" alt="chowking" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/ediya-1.jpg" alt="EDIYA COFFEE" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/hollys-1.jpg" alt="hollys" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/maancoffee-1.jpg" alt="maancoffee" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/magicsnow-1.jpg" alt="magicsnow" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/naza-1.jpg" alt="naza" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/pb-1.jpg" alt="paris baguette" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/rottibun-1.jpg" alt="rottibun" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/seolhwa-1.jpg" alt="seolhwa" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/sulmida.jpg" alt="sulmida" class="img-fluid" />
-			</div>
-			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/sulnbeans-1.jpg" alt="sulnbeans" class="img-fluid" />
+				<img src="<?php echo($front_img_url); ?>/logo/sulnbeans.png" alt="sulnbeans" class="img-fluid" />
 			</div>
 			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
 				<img src="<?php echo($front_img_url); ?>/logo/theseol-1.jpg" alt="the seol" class="img-fluid" />
 			</div>
 			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/touslesjours-1.jpg" alt="tous les jours" class="img-fluid" />
+				<img src="<?php echo($front_img_url); ?>/logo/august-snow.png" alt="zoo coffee" class="img-fluid" />
 			</div>
 			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/unnamed-1.jpg" alt="옥루몽" class="img-fluid" />
+				<img src="<?php echo($front_img_url); ?>/logo/sobing.png" alt="sobing" class="img-fluid" />
 			</div>
 			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/victor-1.jpg" alt="victor" class="img-fluid" />
+				<img src="<?php echo($front_img_url); ?>/logo/seolbang.png" alt="seol bang" class="img-fluid" />
 			</div>
 			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/vivaldi-1.jpg" alt="vivaldi park" class="img-fluid" />
+				<img src="<?php echo($front_img_url); ?>/logo/widcafe.png" alt="widcafe" class="img-fluid" />
 			</div>
 			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/widcafe-1.jpg" alt="widcafe" class="img-fluid" />
+				<img src="<?php echo($front_img_url); ?>/logo/zoo.png" alt="zoo coffee" class="img-fluid" />
 			</div>
 			<div class="col-lg-3-half col-md-4 col-sm-4 col-6">
-				<img src="<?php echo($front_img_url); ?>/logo/zoo-1.jpg" alt="zoo coffee" class="img-fluid" />
+				<img src="<?php echo($front_img_url); ?>/logo/victor-1.png" alt="victor" class="img-fluid" />
 			</div>
 		</div>
 	</div>

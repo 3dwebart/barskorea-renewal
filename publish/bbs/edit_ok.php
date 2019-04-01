@@ -52,7 +52,7 @@
 
     if (!$session_user_id) {
         $sql = "UPDATE `%s` SET
-                    writer='%s', email='%s', html = '%s',  subject='%s', explanation='%s' , content='%s', img_align = '%s', img_pos = '%s', edit_date=now()
+                    writer='%s', email='%s', html = '%s',  subject='%s', content='%s', img_align = '%s', img_pos = '%s', edit_date=now()
                 WHERE id=%d AND pwd=password('%s')";
 
         $result = $db -> query($sql, array($bo_table, $writer, $email, $html, $subject, $explanation, $content, $img_align, $img_pos, 

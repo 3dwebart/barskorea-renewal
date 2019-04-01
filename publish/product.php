@@ -205,7 +205,7 @@
 	</div>
 </div>
 
-<div class="block-wrap dark-bg">
+<div class="block-wrap dark-bg" id="kitchenItems">
 	<div class="container text-center">
 		<h2 class="bar-title"><?php echo $langCode['OneStopSolution']; ?></h2>
 		<p class="content"><?php echo $langCode['OneStopSolutionCon']; ?></p>

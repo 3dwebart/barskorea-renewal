@@ -1,8 +1,9 @@
 <?php
 $header_path = dirname(__FILE__)."/header.php";
+/*
 error_reporting(E_ALL);
-
 ini_set("display_errors", 1);
+*/
 include_once($header_path);
 include_once($include_dir.'/CountryChk.php');
 $name     = post('name');
@@ -42,8 +43,8 @@ try {
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('3dwebart@naver.com', 'Mailer'); // 보내는 사람
-    $mail->addAddress('3d.web.artist@gmail.com', 'Joe User'); // 받는 사람 Add a recipient
+    $mail->setFrom('barskorea@hanmail.net', 'Contact US'); // 보내는 사람
+    $mail->addAddress('barskorea@hanmail.net', 'barskorea'); // 받는 사람 Add a recipient
     //$mail->addAddress('ellen@example.com');               // Name is optional
     //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');

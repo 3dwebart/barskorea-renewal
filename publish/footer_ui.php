@@ -23,6 +23,10 @@
 					<i class="fa fa-instagram"></i>
 					<?php echo($langCode['FollowOnInstagram']); ?>
 				</a>
+				<a href="https://www.facebook.com/barskorea.official/" class="btn btn-primary mt-3" target="_blank">
+					<i class="fa fa-facebook-official" aria-hidden="true"></i>
+					Facebook
+				</a>
 			</div>
 		</div>
 			

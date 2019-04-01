@@ -40,7 +40,7 @@
 					<i class="fa fa-camera"></i>
 				</div>
 				<h2 class="title color-orange"><?php echo $langCode['PhotoAndDesign']; ?></h2>
-				<p class="content font-d75rem">
+				<p class="content">
 					<?php echo $langCode['PhotoAndDesignCon']; ?>
 				</p>
 				<div class="row-8 m-mx-0">
@@ -71,7 +71,7 @@
 					<i class="fa fa-building"></i>
 				</div>
 				<h2 class="title color-orange"><?php echo $langCode['InteriorDesign']; ?></h2>
-				<p class="content font-d75rem">
+				<p class="content">
 					<?php echo $langCode['InteriorDesignCon']; ?>
 				</p>
 			</div>
@@ -115,7 +115,7 @@
 					<i class="fa fa-coffee"></i>
 				</div>
 				<h2 class="title color-orange"><?php echo $langCode['MenuDevelopment']; ?></h2>
-				<p class="content font-d75rem">
+				<p class="content">
 					<?php echo $langCode['MenuDevelopmentCon']; ?>
 				</p>
 			</div>
@@ -154,7 +154,7 @@
 					<i class="fa fa-bullhorn"></i>
 				</div>
 				<h2 class="title color-orange"><?php echo $langCode['Training']; ?></h2>
-				<p class="content font-d75rem">
+				<p class="content">
 					<?php echo $langCode['TrainingCon']; ?>
 				</p>
 				<div class="row-8 m-mx-0">
@@ -183,7 +183,7 @@
 		</div>
 	</div>
 </div>
-<div class="block-wrap dark-bg">
+<div class="block-wrap dark-bg" id="BKkoreaBranding">
 	<div class="container text-center">
 		<h2 class="bar-title"><?php echo $langCode['OurBrands']; ?></h2>
 		<p class="content"><?php echo $langCode['OurBrandsCon']; ?></p>
@@ -246,15 +246,6 @@
 					So Bing introduces to Israel the popular Korean dessert Bingsu, based on flavored snow accompanied by sauces, fresh fruit and various extras.
 				</p>
 			</div>
-			<div class="col-lg-3">
-				<div class="logo-box">
-					<img src="<?php echo $front_img_url; ?>/bkkorea/logo/KakaoTalk_20181105_132250892-2-768x659.png" alt="bingsu" class="img-fluid" />
-				</div>
-				<h2 class="title subject pb-0 pt-2">Korean Bingsu and Café</h2>
-				<p class="content">
-					Straight from Korea all the way to Jordan, the journey of Be.J Café began in October 25th 2018 with irresistibly fun to eat and creative desserts.
-				</p>
-			</div>
 		</div>
 	</div>
 </div>
@@ -281,7 +272,7 @@
 				<h2 class="bar-title color-orange"><?php echo $langCode['VisitBKKoreaWebsite']; ?></h2>
 				<p class="content"><?php echo $langCode['VisitBKKoreaWebsiteCon']; ?></p>
 				<div class="">
-					<a href="" class="btn btn-mint">
+					<a href="http://www.bekkorea.com" target="_blank" class="btn btn-mint">
 						<?php echo $langCode['clickMe']; ?>
 					</a>
 				</div>
@@ -292,32 +283,32 @@
 <div class="row-3 m-0">
 	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="1" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
-			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bing-slider-10.jpg" alt="slide 1" class="img-fluid" />
+			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/family1.png" alt="slide 1" class="img-fluid" />
 		</a>
 	</div>
 	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="2" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
-			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bing-slider-11.jpg" alt="slide 2" class="img-fluid" />
+			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/family2.png" alt="slide 2" class="img-fluid" />
 		</a>
 	</div>
 	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="3" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
-			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/3-560560-1.jpg" alt="slide 3" class="img-fluid" />
+			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/family3.png" alt="slide 3" class="img-fluid" />
 		</a>
 	</div>
 	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="4" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
-			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/bek-gallery-19-1.jpg" alt="slide 4" class="img-fluid" />
+			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/family4.png" alt="slide 4" class="img-fluid" />
 		</a>
 	</div>
 	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="5" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
-			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/grid10.jpg" alt="slide 5" class="img-fluid" />
+			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/family5.png" alt="slide 5" class="img-fluid" />
 		</a>
 	</div>
 	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="6" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
-			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/grid12.jpg" alt="slide 6" class="img-fluid" />
+			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/family6.png" alt="slide 6" class="img-fluid" />
 		</a>
 	</div>
 	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
@@ -327,7 +318,7 @@
 	</div>
 	<div class="col-lg-3-half col-md-6 col-sm-6 col-6 p-0">
 		<a href="#VisitBKKorea" data-id="8" data-toggle="modal" data-target="#VisitBKKoreaModal" class="modal-btn">
-			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/menu-1-big.jpg" alt="slide 8" class="img-fluid" />
+			<img src="<?php echo $front_img_url; ?>/bkkorea/slide/family8.png" alt="slide 8" class="img-fluid" />
 		</a>
 	</div>
 </div>

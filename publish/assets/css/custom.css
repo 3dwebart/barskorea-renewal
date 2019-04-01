@@ -1,7 +1,14 @@
 /********** END :: Common **********/
-.captcha-image { max-height: 34px !important; }
+.captcha-image { /* max-height: 34px !important; */ }
 a { color: rgba(86,189,181,1); }
 a:hover { color: rgba(86,189,181,1); }
+p {
+	/*
+	width: 100%;
+	white-space: pre-wrap;
+	word-break: break-all;
+	*/
+}
 .font-d75rem { font-size: 0.75rem !important; }
 .font-2rem { font-size: 2rem !important; }
 .font-5rem { font-size: 5rem !important; }
@@ -181,6 +188,7 @@ a:hover { color: rgba(86,189,181,1); }
 .modal-btn img { transform: scale(1); transition: all .5s ease; }
 .modal-btn:hover img { transform: scale(1.2); transition: all .5s ease; }
 /********** END :: Common **********/
+.features-wrap.contact-submit a { color: #fff; }
 .bg-att1 {
 	background-attachment: fixed;
 	background-image: url(../img/bg-att-1.png);

@@ -2,10 +2,11 @@
 	include_once('header_ui.php');
 	$pageNo = 1;
 ?>
-<div class="block-wrap light-bg">
+<div class="block-wrap light-bg pb-3">
+	<!-- <img src="<?php echo($front_img_url) ?>/200dk.jpg" alt="top image" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" style="width: 100%;" /> -->
 	<div class="container">
 		<img src="<?php echo($front_img_url) ?>/slider_8-3.jpg" alt="top image" class="img-fluid d-none d-sm-none d-md-none d-lg-block d-xl-block" />
-		<img src="<?php echo($front_img_url) ?>/m-slider_8-3.jpg" alt="top image" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-none" />
+		<img src="<?php echo($front_img_url) ?>/200dk-m.jpg" alt="top image" class="img-fluid d-block d-sm-block d-md-block d-lg-none d-xl-none" />
 	</div>
 </div>
 <div class="block-wrap dark-bg">
@@ -43,7 +44,7 @@
 <div class="block-wrap light-bg">
 	<div class="container">
 		<h2 class="title"><?php echo $langCode['CompanyHistory']; ?></h2>
-		<div class="row-5 align-item-center py-4">
+		<div class="row align-item-center py-4">
 			<div class="col-lg-6 text-right  m-text-left order-2 order-lg-1">
 				<h3 class="month-year">08,1997</h3>
 				<?php echo $langCode['CompanyHistory1997_08']; ?>
@@ -60,7 +61,7 @@
 				<img src="<?php echo $front_img_url ?>/barskorea_history1.png" alt="barskorea since 1997" class="img-fluid" />
 			</div>
 		</div>
-		<div class="row-5 align-item-center py-4">
+		<div class="row align-item-center py-4">
 			<div class="col-lg-6 text-right">
 				<iframe id="history_movie" width="100%" src="https://www.youtube.com/embed/aolUJoAJ0ks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
@@ -77,7 +78,7 @@
 				<?php echo $langCode['CompanyHistory2011_11']; ?>
 			</div>
 		</div>
-		<div class="row-5 align-item-center py-4">
+		<div class="row align-item-center py-4">
 			<div class="col-lg-6 text-right m-text-left order-2 order-lg-1">
 				<h3 class="month-year">03,2013</h3>
 				<?php echo $langCode['CompanyHistory2013_03']; ?>
