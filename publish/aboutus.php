@@ -14,15 +14,15 @@
 		<h2 class="bar-title"><?php echo $langCode['OurAchievements']; ?></h2>
 		<div class="row p-0">
 			<div class="col-lg-4 p-3">
-				<p class="content text-center font-7rem count">20</p>
+				<p class="content text-center font-7rem count" data-count="20">0</p>
 				<h3 class="title text-center"><?php echo $langCode['Patents']; ?></h3>
 			</div>
 			<div class="col-lg-4 p-3">
-				<p class="content text-center font-7rem count">40</p>
+				<p class="content text-center font-7rem count" data-count="40">0</p>
 				<h3 class="title text-center"><?php echo $langCode['ExportCountries']; ?></h3>
 			</div>
 			<div class="col-lg-4 p-3">
-				<p class="content text-center font-7rem count">60</p>
+				<p class="content text-center font-7rem count" data-count="60">0</p>
 				<h3 class="title text-center"><?php echo $langCode['OpenedStores']; ?></h3>
 			</div>
 		</div>
@@ -115,29 +115,30 @@ function historyMovie() {
 	/* BIGIN :: Number count animation */
 	var scrollPos = jQuery(document).scrollTop();
 	var counterPos = jQuery('#OurAchievements').offset().top;
+	var tmp = true;
 	function counter(scPos) {
-		//if(scPos > counterPos) {
+		if(scPos > counterPos && tmp) {
 			jQuery('.count').each(function () {
 			    jQuery(this).prop('Counter',0).animate({
-			        Counter: jQuery(this).text()
+			        Counter: jQuery(this).data('count')
 			    }, {
-			        duration: 5000,
+			        duration: 3000,
 			        easing: 'swing',
 			        step: function (now) {
 			            $(this).text(Math.ceil(now));
 			        }
 			    });
 			});
-		//}
+			tmp = false;
+		}
 	}
 	counter(scrollPos);
-	/*
+
 	jQuery(window).scroll(function() {
 		scrollPos = jQuery(document).scrollTop();
 		counter(scrollPos);
-		console.log('Moving scroll position :: ' + scrollPos + '\ncpunter position' + counterPos);
 	});
-	*/
+
 	/* END :: Number count animation */
 })(jQuery);
 </script>

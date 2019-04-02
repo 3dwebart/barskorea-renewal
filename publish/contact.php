@@ -83,7 +83,8 @@
 							<label for="phone1" class="col-lg-3 col-form-label"><?php echo $langCode['f_phone']; ?>:</label>
 							<div class="col-lg-9">
 								<div class="input-group">
-									<input type="tel" name="phone1" class="form-control col-3" id="phone1" placeholder="">
+									<span class="input-group-prepend col-form-label pr-2 pl-2" style="color: red;">+</span>
+									<input type="tel" name="phone1" class="form-control col-3" id="phone1" placeholder="" maxlength="7">
 									<span class="input-group-prepend col-form-label pl-2 pr-2"> - </span>
 									<input type="tel" name="phone2" class="form-control" placeholder="">
 								</div>

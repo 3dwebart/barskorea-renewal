@@ -591,7 +591,7 @@ $res = $db -> query($sql, array($galleryFile, $galleryTable));
 						<label for="phone1" class="col-lg-3 col-form-label"><?php echo $langCode['f_phone']; ?>:</label>
 						<div class="col-lg-9">
 							<div class="input-group">
-								<input type="tel" name="phone1" class="form-control col-3" id="phone1">
+								<input type="tel" name="phone1" class="form-control col-3" id="phone1" maxlength="7">
 								<span class="input-group-prepend col-form-label pl-2 pr-2"> - </span>
 								<input type="tel" name="phone2" class="form-control">
 							</div>
