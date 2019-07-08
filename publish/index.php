@@ -8,6 +8,15 @@
 <!-- GIHIN :: Main slider -->
 <link rel="stylesheet" href="<?php echo $front_css_url.'/swiper.min.css' ?>">
 <script src="<?php echo $front_js_url.'/swiper.min.js' ?>"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139047203-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139047203-1');
+</script>
 <div class="">
 	<div class="main-slide-wrap">
 		<div class="main-slide">
@@ -56,6 +65,7 @@ var swiper = new Swiper('.swiper-container', {
 		delay: 2500,
 		disableOnInteraction: false,
 	},
+	effect: 'fade',
 	loop: true,
 	pagination: {
 		el: '.swiper-pagination',
@@ -95,22 +105,23 @@ var swiper = new Swiper('.swiper-container', {
 		<p class="content col-12"><?php echo $langCode['companyCon']; ?></p>
 		<div class="row p-0 pt-5 mt-5">
 			<div class="col-lg-4 text-center">
-				<img src="<?php echo($front_img_url); ?>/resized5-300x300.jpg" alt="" class="img-fluid rounded-circle">
+				<img src="<?php echo($front_img_url); ?>/resized5-300x300.jpg" alt="Bingsu machine, SUF-400NW-2MK, SNOW ICE MACHINE, NSF Bingsu machine" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle1']; ?></h3>
-				<p class="content minH-160"><?php echo $langCode['comProductContent1']; ?></p>
+				<p class="content minH-lg-160"><?php echo $langCode['comProductContent1']; ?></p>
 				<a href="#machine" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
 			</div>
 			<div class="col-lg-4 text-center">
-				<img src="<?php echo($front_img_url); ?>/kitchen-300x300.jpg" alt="" class="img-fluid rounded-circle">
+				<img src="<?php echo($front_img_url); ?>/kitchen-300x300.jpg" alt="BARSKOREA Restaurant kitcheb interior" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle2']; ?></h3>
-				<p class="content minH-160"><?php echo $langCode['comProductContent2']; ?></p>
+				<p class="content minH-lg-160"><?php echo $langCode['comProductContent2']; ?></p>
 				<a href="<?php echo $site_url; ?>/product.php#kitchenItems" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
 			</div>
 			<div class="col-lg-4 text-center">
-				<img src="<?php echo($front_img_url); ?>/bek-gallery-17-300x300.jpg" alt="" class="img-fluid rounded-circle">
+				<img src="<?php echo($front_img_url); ?>/bek-gallery-17-300x300.jpg" alt="BARSKOREA Cooking recipe" class="img-fluid rounded-circle">
 				<h3 class="title mt-3 mb-3 text-center"><?php echo $langCode['comProductTitle3']; ?></h3>
-				<p class="content minH-160"><?php echo $langCode['comProductContent3']; ?></p>
-				<a href="<?php echo $site_url; ?>/bkkorea.php#BKkoreaBranding" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
+				<p class="content minH-lg-160"><?php echo $langCode['comProductContent3']; ?></p>
+				<!--<a href="<?php echo $site_url; ?>/bkkorea.php#BKkoreaBranding" class="btn btn-warning m-mb-5">-->
+				<a href="http://www.bekkorea.com" target="_blank" class="btn btn-warning m-mb-5"><?php echo $langCode['clickMe']; ?></a>
 			</div>
 		</div>
 	</div>
@@ -128,7 +139,7 @@ var swiper = new Swiper('.swiper-container', {
 <div class="block-wrap light-bg">
 	<div class="container">
 		<div class="row machine-ex p-0">
-			<div class="col-lg-6 order-lg-1 order-2 d-flex flex-direction-column space-between">
+			<div class="col-lg-6 order-lg-1 order-2 d-flex flex-direction-column">
 				<div>
 					<h2 class="bar-title text-center"><?php echo($langCode['SUF400NWMK']); ?></h2>
 					<div class="content pl-5 pr-5 mb-5"><?php echo($langCode['SUF400NWMKCon']); ?></div>
@@ -139,7 +150,7 @@ var swiper = new Swiper('.swiper-container', {
 						</div>
 						<div class="col-lg-6 mb-3">
 							<h2 class="mb-0"><?php echo($langCode['CoolingType']); ?></h2>
-							<span><?php echo($langCode['Air']); ?>/<?php echo($langCode['Water']); ?></span>
+							<span><?php echo($langCode['Air']); ?></span>
 						</div>
 						<div class="col-lg-6 mb-3">
 							<h2 class="mb-0"><?php echo($langCode['Weight']); ?></h2>
@@ -164,10 +175,13 @@ var swiper = new Swiper('.swiper-container', {
 							<span><?php echo($langCode['Snow']); ?>/<?php echo($langCode['FlavoredShavedIce']); ?></span>
 						</div>
 						<div class="col-lg-6 mb-3">
-							<h2 class="mb-0"><?php echo($langCode['Container']); ?></h2>
+							<h2 class="mb-0"><?php echo($langCode['Storage']); ?></h2>
 							<span>20kg(100bw/200g)</span>
 						</div>
 					</div>
+				</div>
+				<div class="mt-5 mb-3">
+					<img src="<?php echo($front_img_url) ?>/no_water_connect_need.png" alt="No water connect need" class="img-fluid" />
 				</div>
 				<div class="row-5">
 					<div class="col-lg-2 col-md-4 col-sm-4 col-2 mt-2 mb-2 text-xs-center"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
@@ -179,7 +193,7 @@ var swiper = new Swiper('.swiper-container', {
 				</div>
 			</div>
 			<div class="col-lg-6 order-lg-2 order-1">
-				<img src="<?php echo $front_img_url ?>/400MK-960x720.jpg" alt="" class="img-fluid">
+				<img src="<?php echo $front_img_url ?>/bingsu-machine-400MK-960x720.jpg" alt="400MK : barskorea Snow ice machine,bingsu, bingsu machine, sulbing,sulbing machine, bingbox machine,bingbox, be.k, bek dessert cafe,barskorea, bk korea, sul n bean, sul&bean" class="img-fluid">
 			</div>
 		</div>
 	</div>
@@ -190,24 +204,29 @@ var swiper = new Swiper('.swiper-container', {
 	<div class="container">
 		<div class="row machine-ex p-0">
 			<div class="col-lg-6">
-				<img src="<?php echo $front_img_url ?>/400-2mk.png" alt="" class="img-fluid">
+				<img src="<?php echo $front_img_url ?>/bingsu-machine-400-2mk.png" alt="400 2MK : barskorea Snow ice machine,bingsu, bingsu machine, sulbing,sulbing machine, bingbox machine,bingbox, be.k, bek dessert cafe,barskorea, bk korea, sul n bean, sul&bean" class="img-fluid">
 			</div>
 			<div class="col-lg-6 d-flex flex-direction-column space-between">
 				<div class="">
 					<h2 class="bar-title text-center">
 						<?php echo($langCode['SUF400NW2MK']); ?>
 					</h2>
-					<div class="content pl-5 pr-5 mb-5">
+					<div class="content mb-5">
 						<?php echo($langCode['SUF400NW2MKCon']); ?>
+						<?php if($currentLang == 'eng') { ?>
+						<span class="d-block color-orange mt-4 text-center font-2rem bold">
+							Two Flavors at Same Time
+						</span>
+						<?php } ?>
 					</div>
 					<div class="row">
 						<div class="col-lg-6 mb-3">
 							<h2 class="mb-0"><?php echo($langCode['Measurements']); ?></h2>
-							<span>548 X 541 X 1250mm</span>
+							<span>548 X 581 X 1250mm</span>
 						</div>
 						<div class="col-lg-6 mb-3">
 							<h2 class="mb-0"><?php echo($langCode['CoolingType']); ?></h2>
-							<span><?php echo($langCode['Air']); ?>/<?php echo($langCode['Water']); ?></span>
+							<span><?php echo($langCode['Air']); ?></span>
 						</div>
 						<div class="col-lg-6 mb-3">
 							<h2 class="mb-0"><?php echo($langCode['Weight']); ?></h2>
@@ -219,7 +238,7 @@ var swiper = new Swiper('.swiper-container', {
 						</div>
 						<div class="col-lg-6 mb-3">
 							<h2 class="mb-0"><?php echo($langCode['Power']); ?></h2>
-							<span>110-240V, 50-60Hz</span>
+							<span>220-240V, 50-60Hz</span>
 						</div>
 						<div class="col-lg-6 mb-3">
 							<h2 class="mb-0">
@@ -232,10 +251,13 @@ var swiper = new Swiper('.swiper-container', {
 							<span><?php echo($langCode['Snow']); ?>/<?php echo($langCode['FlavoredShavedIce']); ?></span>
 						</div>
 						<div class="col-lg-6 mb-3">
-							<h2 class="mb-0"><?php echo($langCode['Container']); ?></h2>
+							<h2 class="mb-0"><?php echo($langCode['Storage']); ?></h2>
 							<span>20kg(100bw/200g)</span>
 						</div>
 					</div>
+				</div>
+				<div class="mt-5 mb-3">
+					<img src="<?php echo($front_img_url) ?>/no_water_connect_need.png" alt="No water connect need" class="img-fluid" />
 				</div>
 				<div class="row-5">
 					<div class="col-lg-2 col-md-2 col-sm-2 col-2 mt-2 mb-2"><img src="<?php echo($front_img_url) ?>/mark/ce-150x150.png" alt="CE" class="img-fluid"></div>
@@ -269,7 +291,7 @@ var swiper = new Swiper('.swiper-container', {
 						</div>
 						<div class="col-lg-6 mb-3">
 							<h2 class="mb-0"><?php echo($langCode['Weight']); ?></h2>
-							<span>54kgs</span>
+							<span>51kgs</span>
 						</div>
 						<div class="col-lg-6 mb-3">
 							<h2 class="mb-0"><?php echo($langCode['Production']); ?></h2>
@@ -291,7 +313,7 @@ var swiper = new Swiper('.swiper-container', {
 						</div>
 						<div class="col-lg-6 mb-3">
 							<h2 class="mb-0"><?php echo($langCode['Container']); ?></h2>
-							<span>6kg(41bw/200g)</span>
+							<span>6 liters</span>
 						</div>
 					</div>
 				</div>
@@ -305,7 +327,7 @@ var swiper = new Swiper('.swiper-container', {
 				</div>
 			</div>
 			<div class="col-lg-6 order-lg-2 order-1">
-				<img src="<?php echo $front_img_url ?>/200dk.png" alt="" class="img-fluid">
+				<img src="<?php echo $front_img_url ?>/bingsu-machine-200dk.png" alt="200DK : barskorea Small but powerful Snow ice machine,bingsu, bingsu machine, sulbing,sulbing machine, bingbox machine,bingbox, be.k, bek dessert cafe,barskorea, bk korea, sul n bean, sul&bean" class="img-fluid">
 			</div>
 		</div>
 	</div>
@@ -358,55 +380,79 @@ var swiper = new Swiper('.swiper-container', {
 				<p class="pt-1 pb-1"><?php echo $langCode['FeaturesContent6']; ?></p>
 			</div>
 		</div>
-		<div class="row-10 mt-5">
+		<div class="row-10 mt-5 machin-info">
 			<div class="col-lg-3">
-				<img src="<?php echo($front_img_url) ?>/machine1.jpg" alt="" class="img-fluid rounded-1rem">
+				<div class="row">
+					<div class="col-12">
+						<img src="<?php echo($front_img_url) ?>/machine1.jpg" alt="Bingsu machine High Production" class="img-fluid rounded-1rem">
+					</div>
+					<div class="col-12">
+						<h2 class="title"><?php echo $langCode['HighProduction']; ?></h2>
+						<p class="content"><?php echo $langCode['HighProductionCon']; ?></p>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg-3">
-				<h2 class="title"><?php echo $langCode['HighProduction']; ?></h2>
-				<p class="content"><?php echo $langCode['HighProductionCon']; ?></p>
+				<div class="row">
+					<div class="col-12 order-1 order-lg-2">
+						<img src="<?php echo($front_img_url) ?>/machine2.jpg" alt="Bingsu machine Easy Cleaning System
+" class="img-fluid rounded-1rem">
+	
+					</div>
+					<div class="col-12 order-2 order-lg-1" style="min-height: 223px;">
+						<h2 class="title"><?php echo $langCode['EasyCleaningSystem']; ?></h2>
+						<p class="content"><?php echo $langCode['EasyCleaningSystemCon']; ?></p>
+					</div>
+				</div>
 			</div>
 			<div class="col-lg-3">
-				<img src="<?php echo($front_img_url) ?>/machine2.jpg" alt="" class="img-fluid rounded-1rem">
+				<div class="row">
+					<div class="col-12">
+						<img src="<?php echo($front_img_url) ?>/machine3.jpg" alt="Bingsu machine Cooling Function" class="img-fluid rounded-1rem">
+					</div>
+					<div class="col-12">
+						<h2 class="title"><?php echo $langCode['CoolingFunction']; ?></h2>
+						<p class="content"><?php echo $langCode['CoolingFunctionCon']; ?></p>
+					</div>
+				</div>					
 			</div>
 			<div class="col-lg-3">
-				<h2 class="title"><?php echo $langCode['EasyCleaningSystem']; ?></h2>
-				<p class="content"><?php echo $langCode['EasyCleaningSystemCon']; ?></p>
-			</div>
-		</div>
-		<div class="row-10">
-			<div class="col-lg-3 order-lg-1 order-2">
-				<h2 class="title"><?php echo $langCode['CoolingFunction']; ?></h2>
-				<p class="content"><?php echo $langCode['CoolingFunctionCon']; ?></p>
-			</div>
-			<div class="col-lg-3 order-lg-2 order-1">
-				<img src="<?php echo($front_img_url) ?>/machine3.jpg" alt="" class="img-fluid rounded-1rem">
-			</div>
-			<div class="col-lg-3 order-lg-3 order-4">
-				<h2 class="title"><?php echo $langCode['EasyFunctionSystem']; ?></h2>
-				<p class="content"><?php echo $langCode['EasyFunctionSystemCon']; ?></p>
-			</div>
-			<div class="col-lg-3 order-lg-4 order-3">
-				<img src="<?php echo($front_img_url) ?>/machine4.jpg" alt="" class="img-fluid rounded-1rem">
+				<div class="row">
+					<div class="col-12 order-1 order-lg-2">
+						<img src="<?php echo($front_img_url) ?>/machine4.jpg" alt="Bingsu machine Easy Function System" class="img-fluid rounded-1rem">
+	
+					</div>
+					<div class="col-12 order-2 order-lg-1" style="min-height: 223px;">
+						<h2 class="title"><?php echo $langCode['EasyFunctionSystem']; ?></h2>
+						<p class="content"><?php echo $langCode['EasyFunctionSystemCon']; ?></p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <div class="features-wrap block-wrap dark-bg">
-	<div class="container text-center">
+	<div class="container text-center vimeo-container1">
 		<h2 class="bar-title"><?php echo $langCode['CheckOutOurSuperSnowMachines']; ?></h2>
 		<p class="content"><?php echo $langCode['CheckOutOurSuperSnowMachinesCon']; ?></p>
-		<a href="https://vimeo.com/242702098" data-vimeo data-vimeo-loop data-vimeo-autoplay data-vimeo-maxwidth="640" class="vimeo">
-			<img src="http://posterfra.me/https://vimeo.com/242702098" alt="Barskorea Super Snow Machines" />
+		<a href="https://vimeo.com/242702098" data-vimeo data-vimeo-loop data-vimeo-maxwidth="640" class="vimeo d-block">
+			<img src="http://posterfra.me/https://vimeo.com/242702098" alt="Barskorea Super Snow Machines" class="img-fluid" />
 		</a>
 	</div>
 </div>
 <div class="features-wrap block-wrap orange-bg">
-	<div class="container text-center">
+	<div class="container text-center vimeo-container2">
 		<h2 class="bar-title"><?php echo $langCode['YourBrandingPartner​']; ?></h2>
 		<p class="content mp-10"><?php echo $langCode['YourBrandingPartner​Con']; ?></p>
-		<a href="https://vimeo.com/287376612" data-vimeo data-vimeo-loop data-vimeo-autoplay data-vimeo-maxwidth="640" class="vimeo">
-			<img src="http://posterfra.me/https://vimeo.com/287376612" alt="Barskorea Super Snow Machines" />
+		<?php
+			if($currentLang == 'eng') {
+				echo '<p class="content d-inline-block" style="margin: 0 auto 20px auto; padding: 10px 20px; background-color: #f67711; font-weight: bold; border-radius: 25px;">';
+				echo 'Click the video <span style="font-size: 20px;"><i class="fa fa-sort-desc" aria-hidden="true"></i></span>';
+				echo '</p>';
+			}
+		?>
+		<a href="https://vimeo.com/287376612" data-vimeo data-vimeo-loop data-vimeo-maxwidth="640" class="vimeo d-block">
+			<img src="http://posterfra.me/https://vimeo.com/287376612" alt="Barskorea Super Snow Machines" class="img-fluid" />
 		</a>
 	</div>
 </div>
@@ -422,7 +468,7 @@ var swiper = new Swiper('.swiper-container', {
 					<a href="<?php echo $site_url?>/bkkorea.php" class="btn btn-light"><?php echo $langCode['clickMe']; ?></a>
 				</div>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 mt-5 mt-lg-0">
 				<img src="<?php echo($front_img_url); ?>/bek_image.jpg" alt="" class="img-fluid" />
 			</div>
 		</div>
@@ -563,7 +609,7 @@ $res = $db -> query($sql, array($galleryFile, $galleryTable));
 					<?php echo($langCode['Email']); ?>. <a href="mailto:barskorea@hanmail.net">barskorea@hanmail.net</a><br />
 					<?php echo($langCode['Tel']); ?>. <a href="tel:+82-32-581-3466">+82-32-581-3466</a><br />
 					<?php echo($langCode['Fax']); ?>. +82-32-581-8937<br />
-					<?php echo($langCode['conpanyWeb']); ?>. <a href="http://www.barskorea.com/" target="_blank">http://www.barskorea.com/</a>
+					<?php echo($langCode['conpanyWeb']); ?>. <a href="http://www.barskorea.com" target="_blank">http://www.barskorea.com</a>
 				</p>
 			</div>
 			<div class="col-lg-6">

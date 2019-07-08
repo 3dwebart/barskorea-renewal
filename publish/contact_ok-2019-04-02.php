@@ -32,8 +32,8 @@ $mail = new PHPMailer(true);                              // Passing `true` enab
 try {
     //Server settings
     $mail->CharSet = "euc-kr";
-    $mail->Encoding = "base64";
-    //$mail->SMTPDebug = 2;                                 // Enable verbose debug output
+	$mail->Encoding = "base64";
+    $mail->SMTPDebug = 2;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
     $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
@@ -43,14 +43,10 @@ try {
     $mail->Port = 587;                                    // TCP port to connect to
 
     //Recipients
-    /*
     $mail->setFrom('barskorea@hanmail.net', 'Contact US'); // 보내는 사람
     $mail->addAddress('barskorea@hanmail.net', 'barskorea'); // 받는 사람 Add a recipient
-    */
-    $mail->setFrom('3dwebart@daum.net', 'Contact US'); // 보내는 사람
-    $mail->addAddress('3dwebart@daum.net', 'barskorea'); // 받는 사람 Add a recipient
     //$mail->addAddress('ellen@example.com');               // Name is optional
-    $mail->addReplyTo($email, $name);
+    //$mail->addReplyTo('info@example.com', 'Information');
     //$mail->addCC('cc@example.com');
     //$mail->addBCC('bcc@example.com');
 
@@ -112,7 +108,7 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    //echo 'Message has been sent';
+    echo 'Message has been sent';
     redirect(FALSE, 'Your inquiry has been received');
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;

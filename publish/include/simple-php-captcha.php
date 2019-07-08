@@ -35,8 +35,8 @@ function simple_php_captcha($config = array()) {
             $font_path . 'times_new_yorker.ttf'
         ),
         'characters' => 'ABCDEFGHJKLMNPRSTUVWXYZabcdefghjkmnprstuvwxyz23456789',
-        'min_font_size' => 28,
-        'max_font_size' => 28,
+        'min_font_size' => 24,
+        'max_font_size' => 24,
         'color' => '#666',
         'angle_min' => 0,
         'angle_max' => 10,
