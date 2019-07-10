@@ -50,4 +50,9 @@
 	jQuery(document).on('click', '.quick-top', function() {
 		jQuery( 'html, body' ).animate( { scrollTop : 0 }, 500 );
 	});
+	
+	// vimeo
+	jQuery(document).on('click', '.vimeo', function() {
+		jQuery(this).find('i').addClass('d-none');
+	});
 })(jQuery);

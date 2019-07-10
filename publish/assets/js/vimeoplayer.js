@@ -14,13 +14,13 @@
             maxheight: false,
             byline: true,
             title: true,
-            portrait: false,
-            color: false,
-            callback: false,
-            autoplay: true,
+            portrait: true,
+            color: true,
+            callback: true,
+            autoplay: false,
             loop: true,
             autopause: true,
-            xhtml: false
+            xhtml: true
         };
 
         _self.loadCount = 0;
