@@ -241,7 +241,7 @@
 				<div class="logo-box">
 					<img src="<?php echo $front_img_url; ?>/bkkorea/logo/sobing-759x1024.png" alt="bingsu" class="img-fluid" />
 				</div>
-				<h2 class="title subject pb-0 pt-2">Delightful Snowy Desserts</h2>
+				<h2 class="title subject pb-0 pt-2">Delightful Snow Desserts</h2>
 				<p class="content">
 					So Bing introduces to Israel the popular Korean dessert Bingsu, based on flavored snow accompanied by sauces, fresh fruit and various extras.
 				</p>
